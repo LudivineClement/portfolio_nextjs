@@ -7,11 +7,25 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        kaushan: ['var(--font-kaushan)'],
+        poppins: ['var(--font-poppins)'],
       },
+      colors: {
+        'gray-global': '#444444',
+        'gray-dark': '#292929',
+        'gray-light': '#999',
+        'pink-global': '#d68da2',
+        'pink-light': '#f3b0c3',
+        'off-white': '#fafafa',
+      },
+      backgroundImage: {
+        'banner-img': "url('/img/bg_header.webp')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
+      boxShadow: {
+        '2xl': '0 25px 50px 0 rgba(0, 0, 0, 0.045)',
+      }
     },
   },
   plugins: [],
