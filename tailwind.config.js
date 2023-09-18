@@ -17,6 +17,7 @@ module.exports = {
         'gray-light': '#999',
         'pink-global': '#d68da2',
         'pink-light': '#f3b0c3',
+        'pink-ultra-light': '#f3b0c091',
         'off-white': '#fafafa',
       },
       backgroundImage: {

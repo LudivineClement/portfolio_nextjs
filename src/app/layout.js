@@ -1,6 +1,10 @@
 import Header from '@/components/Header'
 import './globals.css'
 import { Kaushan_Script, Poppins } from 'next/font/google'
+import "@fortawesome/fontawesome-svg-core/styles.css"; 
+
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
  
 export const kaushan = Kaushan_Script({
   weight: ['400'],
@@ -21,7 +25,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fr">
+    <html lang="fr" className='scroll-smooth'>
       <head>
         <link rel='icon' href='/img/favicon-16x16.png' />
       </head>
