@@ -12,6 +12,7 @@ const About = () => {
             width={360}
             height={500}
             className='rounded w-auto h-auto'
+            priority={false}
           />
         <div className="content-about">
           <h1 className='font-kaushan text-[2.5rem] pt-3 pb-3'>Moi c&apos;est Ludivine, <br />
