@@ -11,3 +11,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #d68da2;
   border-radius: 6px;
 }
+
+.section_cv button:hover .fa-circle-chevron-right {
+  transform: translateX(5px);
+}

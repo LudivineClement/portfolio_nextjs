@@ -12,7 +12,7 @@ const TypeWriter = () => {
           1500,
           "Passionnée",
           1500,
-          "Créatrive",
+          "Créative",
           1500,
         ]}
         speed={30}

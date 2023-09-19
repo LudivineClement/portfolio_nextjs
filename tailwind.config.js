@@ -22,7 +22,7 @@ module.exports = {
       },
       backgroundImage: {
         'banner-img': "url('/img/bg_header.webp')",
-        'footer-texture': "url('/img/footer-texture.png')",
+        'bg-black': "url('/img/bg_black.png')",
       },
       boxShadow: {
         '2xl': '0 25px 50px 0 rgba(0, 0, 0, 0.045)',

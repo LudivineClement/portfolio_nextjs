@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const About = () => {
   return (
-    <section id="about" className='py-24 px-12 -my-24 m-auto max-w-[1160px]'>
+    <section data-section id="about" className='py-24 px-12 -my-24 m-auto max-w-[1160px]'>
       <div className="flex gap-12 my-32">
           <Image
             src="/img/img-about.webp"

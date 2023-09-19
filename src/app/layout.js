@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel='icon' href='/img/favicon-16x16.png' />
       </head>
-      <body className={`${kaushan.variable} ${poppins.variable} font-kaushan font-poppins text-gray-global`}>
+      <body className={`${kaushan.variable} ${poppins.variable} font-poppins text-gray-global`}>
         <Header />
         <main>
           {children}
