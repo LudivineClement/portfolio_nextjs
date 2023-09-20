@@ -13,7 +13,7 @@ const Header = () => {
       <div className="text-off-white absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-center">
         <TypeWriter />
         <div className=" flex gap-6 justify-center">
-          <Link href="https://github.com/LudivineClement?tab=repositories" target="_blank">
+          <Link href="https://github.com/LudivineClement?tab=repositories" target="_blank" title='Github'>
             <Image
               src="/img/icons/icon-github.png"
               alt="icône de github"
@@ -22,7 +22,7 @@ const Header = () => {
               className='hover:brightness-75 transition-all duration-300 ease-in-out'
             />
           </Link>
-          <Link href="https://www.instagram.com/" target="_blank">
+          <Link href="https://www.instagram.com/" target="_blank" title='Instagram'>
             <Image
               src="/img/icons/icon-instagram.png"
               alt="icône d'instagram'"
@@ -31,7 +31,7 @@ const Header = () => {
               className='hover:brightness-75 transition-all duration-300 ease-in-out'
             />
           </Link>
-          <Link href="https://fr.linkedin.com/" target="_blank">
+          <Link href="https://fr.linkedin.com/" target="_blank" title='Linkedin'>
             <Image
               src="/img/icons/icon-linkedin.png"
               alt="icône de Linkedin"
@@ -40,9 +40,9 @@ const Header = () => {
               className='hover:brightness-75 transition-all duration-300 ease-in-out'
             />
           </Link>
-          <Link href="https://twitter.com/?lang=fr" target="_blank">
+          <Link href="https://twitter.com/?lang=fr" target="_blank" title='Twitter X'>
             <Image
-              src="/img/icons/icon-twitter.png"
+              src="/img/icons/icon-twitterx.png"
               alt="icône de Twitter"
               width={20}
               height={20}

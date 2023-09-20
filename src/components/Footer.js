@@ -36,7 +36,7 @@ const Footer = () => {
           </Link>
           <Link href="https://twitter.com/?lang=fr" target="_blank">
             <Image
-              src="/img/icons/icon-twitter.png"
+              src="/img/icons/icon-twitterx.png"
               alt="icône de Twitter"
               width={25}
               height={25}

@@ -38,3 +38,136 @@ body::-webkit-scrollbar-thumb {
   transform: rotateY(180deg);
 }
 
+.rows {
+  display: flex;
+  gap: 50px;
+}
+
+.row1 label,
+.row2 label,
+textarea,
+.form button {
+  display: block;
+}
+
+.row1,
+.row2 {
+  width: 50%;
+}
+
+.form .input_container {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.row1 .input_container input[type="text"],
+.row1 .input_container input[type="email"],
+.row2 .input_container input[type="text"],
+.row2 .input_container input[type="tel"],
+.form textarea {
+  width: 100%;
+  font-size: 0.8rem;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 8px 0 8px 7px;
+  background-color: transparent;
+  outline: none;
+  font-weight: 400;
+  resize: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.row1 .input_container input[type="text"] ~ .label,
+.row1 .input_container input[type="email"] ~ .label,
+.row2 .input_container input[type="text"] ~ .label,
+.row2 .input_container input[type="tel"] ~ .label,
+.form .input_container textarea ~ .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.4s ease;
+  pointer-events: none;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #999;
+}
+
+.row2 .input_container input[type="tel"] ~ .label.filled {
+  top: -20px;
+  font-size: 0.8rem;
+  color: #292929;
+}
+
+.row2 .input_container input[type="tel"] ~ .under_line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+.row2 .input_container input[type="tel"] ~ .under_line.filled {
+  transform: scaleX(1);
+  border-bottom: 1px solid #292929;
+}
+
+.row1 .input_container input[type="text"]:focus ~ .label,
+.row1 .input_container input[type="text"]:valid ~ .label,
+.row1 .input_container input[type="email"]:focus ~ .label,
+.row1 .input_container input[type="email"]:valid ~ .label,
+.row2 .input_container input[type="text"]:focus ~ .label,
+.row2 .input_container input[type="text"]:valid ~ .label,
+.row2 .input_container input[type="tel"]:focus ~ .label,
+.form textarea:focus ~ .label,
+.form textarea:valid ~ .label {
+  top: -20px;
+  font-size: 0.8rem;
+  color: #292929;
+}
+
+.input_container .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+.input_container input[type="text"]:focus ~ .underline,
+.input_container input[type="text"]:valid ~ .underline,
+.input_container input[type="email"]:focus ~ .underline,
+.input_container input[type="email"]:valid ~ .underline,
+.input_container input[type="tel"]:focus ~ .under_line,
+.form .input_container textarea:focus ~ .underline,
+.form .input_container textarea:valid ~ .underline {
+  border-bottom: 1px solid #292929;
+  transform: scaleX(1);
+}
+
+.form textarea {
+  height: 150px;
+  margin-bottom: 40px;
+}
+
+#contact .form .btn_form {
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.1rem;
+  box-shadow: inset 0 -6px 0 #f3b0c3;
+  color: #292929;
+  font-weight: 500;
+  padding: 2px 0 0 1px;
+  display: inline-block;
+  line-height: 12px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+#contact .form .btn_form:hover {
+  box-shadow: inset 0 -15px 0 #f3b0c3;
+}

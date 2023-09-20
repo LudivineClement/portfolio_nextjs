@@ -64,6 +64,7 @@ const Skills = () => {
                   alt="icône de redux"
                   width={70}
                   height={70}
+                  className='rounded w-auto h-auto'
                 />
               </div>
               <div className="flip_box_back absolute w-full h-full rounded-[50%] -top-px bg-black flex justify-center items-center ">
