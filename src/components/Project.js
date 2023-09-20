@@ -2,7 +2,7 @@ import React from 'react';
 
 const Project = () => {
   return (
-    <div data-section id='projects' className='py-24 px-12 -my-24 m-auto max-w-[1250px]'>
+    <section data-section id='projects' className='py-24 px-12 -my-24 m-auto max-w-[1250px]'>
     <h2 className='mb-[30px] mt-28 font-kaushan text-[2.4rem] text-gray-dark'> Derniers projets</h2>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus mollitia suscipit quo voluptatibus blanditiis praesentium quis, dolorem fugiat optio vitae, provident quibusdam dolor similique doloremque harum molestiae incidunt eos dolore.
     Voluptatem ab itaque esse totam dignissimos accusamus ut, facere rerum. Laudantium dolore, nostrum odio sapiente est blanditiis fugit praesentium id quibusdam fugiat libero, quia aperiam delectus perspiciatis optio, neque quod!
@@ -14,7 +14,7 @@ const Project = () => {
     Iure corrupti sapiente aliquid, similique quo reiciendis dignissimos laborum reprehenderit ducimus, quia culpa, distinctio ab vero dolorum rerum aperiam blanditiis nihil. Animi aliquam repudiandae reprehenderit necessitatibus quaerat ipsa nemo? Similique.
     Obcaecati ex quod impedit? Incidunt consequuntur nulla ab rerum minus reprehenderit asperiores accusamus a. Similique deserunt tenetur id optio nesciunt reiciendis rerum delectus! Deserunt nihil dolor provident unde ipsum magnam.
     Ab molestiae, facilis id itaque nobis explicabo voluptatum sunt natus quisquam sapiente vero minus consequuntur, officiis porro ad temporibus nihil beatae sequi quasi quibusdam animi obcaecati harum labore ullam. Non.
-  </div>
+  </section>
   );
 };
 

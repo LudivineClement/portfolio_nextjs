@@ -88,7 +88,7 @@ const Navbar = () => {
         'projects' ? activeStyle : {}}>Mes projets</Link>
             </li>
             <li>
-              <Link href='#contact'>
+              <Link href='#contact' title='contact'>
               <FontAwesomeIcon icon={faEnvelope} style={activeSection === 
         'contact' ? activeContact : {}} className='text-[1.2rem] text-gray-dark pb-1 hover:text-pink-global transition-all duration-[400ms] ease-out' />
               </Link>

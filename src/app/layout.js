@@ -1,9 +1,10 @@
 import Header from '@/components/Header'
+import Footer from '@/components/Footer';
 import './globals.css'
 import { Kaushan_Script, Poppins } from 'next/font/google'
-import "@fortawesome/fontawesome-svg-core/styles.css"; 
-
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+
 config.autoAddCss = false;
  
 export const kaushan = Kaushan_Script({
@@ -13,14 +14,14 @@ export const kaushan = Kaushan_Script({
 })
  
 export const poppins = Poppins({
-  weight: ['100', '400', '500', '700'],
+  weight: ['100', '200', '300', '400', '500', '700'],
   subsets: ['latin'],
   variable: '--font-poppins',
 })
 
 export const metadata = {
-  title: 'Ludivine CLEMENT | Portfolio - développeur web front-end freelance',
-  description: 'Je suis Ludivine CLEMENT, développeuse web front-end freelance passionnée par la création web. Expertise en HTML, CSS, React et responsive design.',
+  title: 'Ludivine CLEMENT | Portfolio - développeur web front-end',
+  description: '',
 }
 
 export default function RootLayout({ children }) {
@@ -29,11 +30,12 @@ export default function RootLayout({ children }) {
       <head>
         <link rel='icon' href='/img/favicon-16x16.png' />
       </head>
-      <body className={`${kaushan.variable} ${poppins.variable} font-poppins text-gray-global`}>
+      <body className={`${kaushan.variable} ${poppins.variable} font-poppins text-gray-global bg-off-white`}>
         <Header />
         <main>
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   )
