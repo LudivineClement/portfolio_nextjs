@@ -58,20 +58,6 @@ body::-webkit-scrollbar-thumb {
   border-bottom: 1px solid #292929;
 }
 
-.row1 .input_container input[type="text"]:focus ~ .label,
-.row1 .input_container input[type="text"]:valid ~ .label,
-.row1 .input_container input[type="email"]:focus ~ .label,
-.row1 .input_container input[type="email"]:valid ~ .label,
-.row2 .input_container input[type="text"]:focus ~ .label,
-.row2 .input_container input[type="text"]:valid ~ .label,
-.row2 .input_container input[type="tel"]:focus ~ .label,
-.form textarea:focus ~ .label,
-.form textarea:valid ~ .label {
-  top: -20px;
-  font-size: 0.8rem;
-  color: #292929;
-}
-
 .input_container .underline {
   position: absolute;
   bottom: 0;
