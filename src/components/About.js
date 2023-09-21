@@ -1,19 +1,12 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const About = () => {
   return (
     <section data-section id="about" className='py-24 px-12 -my-24 m-auto max-w-[1160px]'>
       <div className="flex gap-12 my-32">
-          <Image
-            src="/img/img-about.webp"
-            alt="ordinateur de développeur avec un projet réalisé"
-            width={360}
-            height={500}
-            className='rounded w-auto h-auto'
-            priority={false}
-          />
+        <img src="/img/img-about.webp" alt="ordinateur de développeur avec un projet réalisé" className='h-[500px] rounded-[3px]' />
         <div className="content-about">
           <h1 className='font-kaushan text-[2.5rem] pt-3 pb-3'>Moi c&apos;est Ludivine, <br />
             développeuse web passionnée.</h1>

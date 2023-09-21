@@ -11,6 +11,23 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState(null);
   const sections = useRef([]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 70) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   const handleActiveLink = () => {
     const pageYOffset = window.scrollY;
     let newActiveSection = null;
@@ -46,24 +63,6 @@ const Navbar = () => {
     transition: 'all 0.4s ease-in',
     lineHeight:'10px',
   };
-
- 
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 70) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
     <div className={`fixed w-full top-0 left-0 z-50 transition-all duration-[500ms] ease-out ${isScrolled ? 'bg-off-white shadow-2xl' : 'bg-transparent'}`}>

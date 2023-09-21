@@ -109,6 +109,40 @@ const Skills = () => {
             <div className="flip_box_inner relative w-full h-full text-center transition-transform duration-700 ">
               <div className="flip_box_front absolute w-full h-full rounded-[50%] -top-px ">
                 <Image
+                  src="/img/icons/icons_skills/tailwind.png"
+                  alt="icône de tailwind"
+                  width={70}
+                  height={70}
+                  className='rounded-full w-auto h-auto'
+                />
+              </div>
+              <div className="flip_box_back absolute w-full h-full rounded-[50%] -top-px bg-black flex justify-center items-center ">
+                <p className='uppercase font-extralight'>Tailwind</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="flip_box bg-transparent w-[72px] h-[72px]">
+            <div className="flip_box_inner relative w-full h-full text-center transition-transform duration-700 ">
+              <div className="flip_box_front absolute w-full h-full rounded-[50%] -top-px ">
+                <Image
+                  src="/img/icons/icons_skills/next-js.png"
+                  alt="icône de next js"
+                  width={130}
+                  height={130}
+                  className='w-auto h-auto'
+                />
+              </div>
+              <div className="flip_box_back absolute w-full h-full rounded-[50%] -top-px bg-black flex justify-center items-center ">
+                <p className='uppercase font-extralight'>Next JS</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="flip_box bg-transparent w-[72px] h-[72px]">
+            <div className="flip_box_inner relative w-full h-full text-center transition-transform duration-700 ">
+              <div className="flip_box_front absolute w-full h-full rounded-[50%] -top-px ">
+                <Image
                   src="/img/icons/icons_skills/vscode.webp"
                   alt="icône de vscode"
                   width={70}

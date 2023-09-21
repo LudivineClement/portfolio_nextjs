@@ -8,7 +8,7 @@ const TypeWriter = () => {
         sequence={[
           "Développeuse",
           1500,
-          "Codeuse",
+          "Codeuse </>",
           1500,
           "Passionnée",
           1500,
