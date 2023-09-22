@@ -1,11 +1,9 @@
-'use client'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer';
 import './globals.css'
 import { Kaushan_Script, Poppins } from 'next/font/google'
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import ScrollToTopButton from '@/components/ScrollToTopButton';
 
 config.autoAddCss = false;
  
@@ -34,7 +32,6 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${kaushan.variable} ${poppins.variable} font-poppins text-gray-global bg-off-white`}>
         <Header />
-        <ScrollToTopButton />
         <main>
           {children}
         </main>

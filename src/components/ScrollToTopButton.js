@@ -30,7 +30,7 @@ const ScrollToTopButton = () => {
   return (
     <>
       {isVisible && (
-        <div className='fixed bottom-2 right-5 text-[2.65rem] z-50 text-pink-global cursor-pointer hover:brightness-90 transition-all duration-150 ease-in' onClick={scrollToTop}>
+        <div className='fixed bottom-2 right-5 text-[2.5rem] z-50 text-pink-global cursor-pointer hover:brightness-90 transition-all duration-150 ease-in' onClick={scrollToTop} title='Go to top'>
           <FontAwesomeIcon icon={faCircleChevronUp} />
         </div>
       )}
