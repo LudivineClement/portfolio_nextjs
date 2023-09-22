@@ -4,6 +4,8 @@ import Navbar from './Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
 import TypeWriter from './TypeWriter';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 
 const Header = () => {
@@ -53,13 +55,7 @@ const Header = () => {
       </div>
       <div className='absolute left-1/2 translate-x-[-50%] bottom-12 '>
         <Link href="#about">
-          <Image
-            src="/img/icons/icon-chevron.png"
-            alt="icône de chevron"
-            width={34}
-            height={34}
-            className='animate-bounce'
-          />
+        <FontAwesomeIcon icon={faChevronDown} bounce className='text-off-white text-3xl' />
         </Link>
       </div>
     </header>
