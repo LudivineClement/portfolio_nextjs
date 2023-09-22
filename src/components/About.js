@@ -18,7 +18,7 @@ const About = () => {
             en ligne.
           </p>
           <p className='pt-3 text-[0.95rem] text-gray-light leading-6'>
-            Formée intensivement pendant 9 mois, j&apos;ai pu me familiariser,
+            Formée intensivement pendant 9 mois chez OpenCLassrooms, j&apos;ai pu me familiariser,
             entre autres, avec <span className='inline-block text-gray-dark pt-1 leading-4 shadow-[inset_0px_-6px_0px] shadow-pink-ultra-light'>React,</span> <span className='inline-block text-gray-dark pt-1 leading-4 shadow-[inset_0px_-6px_0px] shadow-pink-ultra-light'>Sass</span>, <span className='inline-block text-gray-dark pt-1 leading-4 shadow-[inset_0px_-6px_0px] shadow-pink-ultra-light'>Node.js</span> et <span className='inline-block text-gray-dark pt-1 leading-4 shadow-[inset_0px_-6px_0px] shadow-pink-ultra-light'>Redux</span> pour créer des
             applications web performantes. Je reste toujours motivée à
             participer à de nouveaux projets, à apprendre de nouvelles
