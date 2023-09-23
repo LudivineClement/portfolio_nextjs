@@ -12,10 +12,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 6px;
 }
 
-.section_cv button:hover .fa-circle-chevron-right {
-  transform: translateX(5px);
-}
-
 .flip_blox {
   perspective: 1000px;
 }
@@ -57,7 +53,6 @@ body::-webkit-scrollbar-thumb {
   transform: scaleX(1);
   border-bottom: 1px solid #292929;
 }
-
 
 .input_container .underline {
   position: absolute;

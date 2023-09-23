@@ -8,6 +8,7 @@ const Skills = () => {
       <h2 className='mb-[30px] mt-4 font-kaushan text-[2.8rem]  text-center blur-[0.5px]'>Mes compétences</h2>
       <div className="flex items-center gap-8 max-w-[850px] m-auto">
         <div className="flex justify-between gap-x-7 gap-y-5 flex-wrap w-[70%] pr-[50px] mt-7 mb-5 border-r-[1px] border-solid border-gray-dark">
+          
           <div className="flip_box bg-transparent w-[72px] h-[72px]">
             <div className="flip_box_inner relative w-full h-full text-center transition-transform duration-700 ">
               <div className="flip_box_front absolute w-full h-full rounded-[50%] -top-px ">

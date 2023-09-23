@@ -9,14 +9,14 @@ import React from 'react';
 
 const Home = () => {
   return (
-   <div>
-    <ScrollToTopButton />
-    <About />
-    <Skills />
-    <Project />
-    <SectionCTA />
-    <Contact />
-   </div>
+    <div>
+      <ScrollToTopButton />
+      <About />
+      <Skills />
+      <Project />
+      <SectionCTA />
+      <Contact />
+    </div>
   );
 };
 
