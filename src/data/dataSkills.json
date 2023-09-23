@@ -1,0 +1,61 @@
+[
+  {
+    "id": "1",
+    "title": "Sass",
+    "img": "/img/icons/icons_skills/sass.svg" 
+  },
+  
+  {
+    "id": "2",
+    "title": "React",
+    "img": "/img/icons/icons_skills/react.webp"
+  }, 
+
+  {
+    "id": "3",
+    "title": "Node js",
+    "img": "/img/icons/icons_skills/nodejs.webp" 
+  },
+  
+  {
+    "id": "4",
+    "title": "Redux",
+    "img": "/img/icons/icons_skills/redux.png" 
+  },
+  
+  {
+    "id": "5",
+    "title": "Github",
+    "img": "/img/icons/icons_skills/github.webp" 
+  },
+  
+  {
+    "id": "6",
+    "title": "Figma",
+    "img": "/img/icons/icons_skills/figma.svg" 
+  },
+  
+  {
+    "id": "7",
+    "title": "Tailwind",
+    "img": "/img/icons/icons_skills/tailwind.png" 
+  },
+  
+  {
+    "id": "8",
+    "title": "Next JS",
+    "img": "/img/icons/icons_skills/next-js.png" 
+  },
+  
+  {
+    "id": "9",
+    "title": "Vs code",
+    "img": "/img/icons/icons_skills/vscode.webp" 
+  },
+  
+  {
+    "id": "10",
+    "title": "RWD",
+    "img": "/img/icons/icons_skills/responsive.webp" 
+  }  
+]

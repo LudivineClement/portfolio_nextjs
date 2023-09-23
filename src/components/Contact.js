@@ -20,9 +20,9 @@ const Contact = () => {
           </div>
           <div className="row2 w-3/6">
           <div className="input_container relative mb-[60px]">
-              <input type="phone" id="phone" className='peer block w-full py-2 pl-[7px] text-[0.8rem] bg-transparent border-b border-[rgba(0, 0, 0, 0.1)] border-solid outline-none resize-none placeholder-transparent' placeholder='objet' required />
+              <input type="tel" id="phone" className='peer block w-full py-2 pl-[7px] text-[0.8rem] bg-transparent border-b border-[rgba(0, 0, 0, 0.1)] border-solid outline-none resize-none placeholder-transparent' placeholder='objet' required />
               <label htmlFor="phone" className="label inline-block absolute top-0 left-0 text-[0.8rem] text-gray-light peer-placeholder-show:text-[0.8rem]peer-placeholder-show:text-gray-dark peer-placeholder-show:top-2 peer-focus:-top-4 peer-focus:text-gray-dark peer-focus:text-[0.8rem] peer-valid:-top-4 peer-valid:text-gray-dark peer-valid:text-[0.8rem]  transition-all duration-[400ms] ease">Téléphone</label>
-              <div className="underline"></div>
+              <div className="under_line"></div>
             </div>
             <div className="input_container relative mb-[60px]">
               <input type="text" id="objet" className='peer block w-full py-2 pl-[7px] text-[0.8rem] bg-transparent border-b border-[rgba(0, 0, 0, 0.1)] border-solid outline-none resize-none placeholder-transparent' placeholder='objet' required />
