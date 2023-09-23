@@ -2,22 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar, .scrollBar::-webkit-scrollbar {
   width: 7px;
   background-color: #292929;
 }
-
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb, .scrollBar::-webkit-scrollbar-thumb {
   background-color: #d68da2;
   border-radius: 6px;
 }
-
+.modal-open{
+  overflow-y: hidden;
+}
 .row2 .input_container input[type="tel"] ~ .label.filled {
   top: -20px;
   font-size: 0.8rem;
   color: #292929;
 }
-
 .row2 .input_container input[type="tel"] ~ .under_line {
   position: absolute;
   bottom: 0;
@@ -26,12 +26,10 @@ body::-webkit-scrollbar-thumb {
   transform: scaleX(0);
   transition: all 0.3s ease;
 }
-
 .row2 .input_container input[type="tel"] ~ .under_line.filled {
   transform: scaleX(1);
   border-bottom: 1px solid #292929;
 }
-
 .input_container .underline {
   position: absolute;
   bottom: 0;
@@ -40,7 +38,6 @@ body::-webkit-scrollbar-thumb {
   transform: scaleX(0);
   transition: all 0.3s ease;
 }
-
 .input_container input[type="text"]:focus ~ .underline,
 .input_container input[type="text"]:valid ~ .underline,
 .input_container input[type="email"]:focus ~ .underline,
