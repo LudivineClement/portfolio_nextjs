@@ -40,9 +40,9 @@ const Project = () => {
         Derniers projets
       </h2>
       <div
-        className={`grid grid-cols-3 gap-x-10 gap-y-[50px] transition-transform duration-300 ease-in-out ${
+        className={`grid grid-cols-3 gap-x-10 gap-y-[50px] transition-transform duration-1000 ease-in-out ${
           isModalOpen
-            ? 'translate-x-[-49.5%]'
+            ? 'translate-x-[-45%]'
             : 'translate-x-0'
         }`}
       >
@@ -53,23 +53,18 @@ const Project = () => {
             title={data.title}
             github={data.github}
             url={data.website}
-            onToggleProjectInfo={() => handleProjectSelect(data)}
+            ToggleProjectInfo={() => handleProjectSelect(data)}
           />
         ))}
       </div>
-      {isModalOpen && (
         <div
-          className="fixed inset-0 flex justify-end items-end z-50 bg-black bg-opacity-50"
+        className={` ${isModalOpen ? 'fixed inset-0 flex justify-end items-end z-50 bg-black bg-opacity-50' : 'opacity-100'} `}
           onClick={handleCloseModal}
         >
           <div
-            className={`bg-white scrollBar w-[80%] md:w-[50%] lg:w-[50%] p-4 shadow-lg border-l-[5px] border-solid border-pink-global transition-transform duration-300 ease-in-out z-10 ${
-              isModalOpen
-                ? 'translate-y-0'
-                : 'translate-y-[100%]'
-            } overflow-y-auto max-h-full md:max-h-[80%] lg:max-h-[86%] `}
+            className={`bg-off-white scrollBar ${isModalOpen ? 'translate-x-0' : 'translate-x-full'} w-[50%] h-[87.25%] p-4 shadow-lg border-l-[5px] border-solid border-pink-global z-10 overflow-y-auto`}
             onClick={(e) => e.stopPropagation()}
-          >
+          >          
             <button
               onClick={handleCloseModal}
               className="absolute top-4 left-4 text-gray-500 hover:text-gray-700 focus:outline-none"
@@ -81,7 +76,6 @@ const Project = () => {
             )}
           </div>
         </div>
-      )}
     </section>
   );
 };

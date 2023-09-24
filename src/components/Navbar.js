@@ -65,7 +65,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`fixed w-full top-0 left-0 z-50 transition-all duration-[500ms] ease-out ${isScrolled ? 'bg-off-white shadow-2xl' : 'bg-transparent'}`}>
+    <div className={`fixed w-full top-0 left-0 z-[100] transition-all duration-[500ms] ease-out ${isScrolled ? 'bg-off-white shadow-2xl' : 'bg-transparent'}`}>
       <div className="flex justify-between items-center py-6 px-9 mx-20">
         <Link href="#home" className={`font-kaushan text-[2rem] font-semibold ${isScrolled ? 'text-gray-dark' : 'text-off-white'}`}>Portfolio</Link>
         <navbar className={`${isScrolled ? 'opacity-1' : 'opacity-0' }`}>

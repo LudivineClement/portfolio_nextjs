@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProjectInfos = ({ data }) => {
   return (
-    <div className=' transition-transform duration-300 ease-in-out'>
+    <div>
       <h3 className='text-[1.7rem] text-center text-black font-kaushan font-semibold'>
         {data.title}
       </h3>
