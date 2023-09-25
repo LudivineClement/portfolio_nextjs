@@ -10,14 +10,9 @@ body::-webkit-scrollbar-thumb, .scrollBar::-webkit-scrollbar-thumb {
   background-color: #d68da2;
   border-radius: 6px;
 }
-.modal-open{
+.scrollHide{
   overflow-y: hidden;
 }
-
-.scrollBar {
-  transition: transform 1s ease-in-out;
-}
-
 .row2 .input_container input[type="tel"] ~ .label.filled {
   top: -20px;
   font-size: 0.8rem;
