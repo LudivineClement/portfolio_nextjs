@@ -9,14 +9,13 @@ const Project = () => {
 
   useEffect(() => {
     if (isModalOpen) {
-      document.body.classList.add('scrollHide');
+      document.body.classList.add('scrollHidden');
     } else {
-      document.body.classList.remove('scrollHide');
+      document.body.classList.remove('scrollHidden');
     }
 
-    // Nettoie la classe lors de la suppression du composant
     return () => {
-      document.body.classList.remove('scrollHide');
+      document.body.classList.remove('scrollHidden');
     };
   }, [isModalOpen]);
 
@@ -37,7 +36,7 @@ const Project = () => {
         Derniers projets
       </h2>
       <div
-        className={`grid grid-cols-3 gap-x-10 gap-y-[50px] transition-transform duration-[800ms] ease-in-out ${isModalOpen
+        className={`grid grid-cols-3 gap-x-8 gap-y-10 transition-transform duration-[1200ms] will-change-transform ease-in-out ${isModalOpen
           ? 'translate-x-[-45%]'
           : 'translate-x-0'
           }`}

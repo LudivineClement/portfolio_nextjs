@@ -2,7 +2,7 @@
   {
     "id": "1",
     "title": "Booki",
-    "client": "Entreprise souhaitant développer un site web pour la recherche d'hébergements et d'activités",
+    "client": "Entreprise souhaitant développer un site web pour la recherche d'hébergements et d'activités.",
     "presentation": "Booki est un projet de développement web visant à créer un site permettant aux utilisateurs de trouver facilement des hébergements et des activités dans la ville de leur choix. Mon rôle en tant que développeuse Front-End était de prendre les maquettes fournies par l'UI designer, et de les intégrer en utilisant HTML et CSS.",
     "overview": "Le défi majeur était de rendre le projet compatible avec diverses tailles d'écran, grâce à une mise en page avec flexbox, tout en respectant les spécifications de conception.",
     "github": "https://github.com/LudivineClement/Booki",
@@ -14,9 +14,9 @@
   {
     "id": "2",
     "title": "Oh My Food!",
-    "client": "Startup de restauration",
+    "client": "Startup de restauration.",
     "presentation": "OhMyFood est une startup de restauration qui souhaite développer un site répertoriant les menus de restaurants gastronomiques. Mon rôle en tant que développeuse était de créer le site en respectant les maquettes fournies par l'équipe UX designer.",
-    "overview": "Le projet a été développé en suivant une approche 'mobile first', garantissant ainsi une expérience optimale pour les utilisateurs sur tous types d'écrans. De plus, j'ai intégré des animations fluides et naturelles pour améliorer l'interactivité du site.",
+    "overview": "Le projet a été développé en suivant une approche 'mobile first', garantissant ainsi une expérience optimale pour les utilisateurs sur tous types d'écrans. De plus, j'ai intégré des animations fluides et naturelles pour augmenter l'interactivité du site.",
     "github": "https://github.com/LudivineClement/oh_my_food",
     "website": "https://ludivineclement.github.io/oh_my_food/",
     "tags": ["HTML5", "CSS3", "Responsive Web Design", "Animations"],
@@ -26,7 +26,7 @@
   {
     "id": "3",
     "title": "Kasa",
-    "client": "startup spécialisée dans la location d'appartements entre particuliers",
+    "client": "startup spécialisée dans la location d'appartements entre particuliers.",
     "presentation": "J'ai travaillé en tant que développeuse front-end sur le projet Kasa. Mon rôle était de concevoir la plateforme web en utilisant React, Node.js, et des maquettes fournies par le designer. La refonte incluait une transition de ASP.NET à une stack JavaScript moderne.",
     "overview": "L'objectif était de moderniser la plateforme existante en React pour optimiser l'expérience utilisateur sur diverses tailles d'écran. J'ai enrichi l'interactivité du site en intégrant des animations CSS tout en introduisant des éléments avancés, notamment la création d'un carrousel pour afficher les images des logements, l'implémentation d'un Collapse pour améliorer l'UX, et la gestion dynamique des fiches logements à partir de données internes. De plus, j'ai utilisé Sass pour améliorer la gestion des styles.",
     "github": "https://github.com/LudivineClement/kasa",

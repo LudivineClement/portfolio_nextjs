@@ -8,7 +8,7 @@ const IconGithub= <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="
 const ProjectCard = ({ img, title, github, url, ToggleProjectInfo }) => {
  
   return (
-    <div className="bg-white max-w-[350px] group relative overflow-hidden h-[400px] shadow-sm will-change-transform">
+    <div className="bg-white group relative overflow-hidden h-[400px] shadow-sm will-change-transform">
       <img
         src={img}
         alt={title}
