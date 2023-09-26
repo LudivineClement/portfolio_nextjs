@@ -22,15 +22,12 @@ const Project = () => {
 
   const handleProjectSelect = (data) => {
     setSelectedProject(data);
-    setIsModalOpen(true);
-  };
+    setTimeout(() => {
+      setIsModalOpen(true);
+    }, 0); 
 
-  const handleCloseModal = () => {
-    setSelectedProject(null);
-    setIsModalOpen(false);
   };
-
-   return (
+  return (
     <section
       data-section
       id='projects'
@@ -57,12 +54,12 @@ const Project = () => {
         ))}
       </div>
       {selectedProject && (
-        <ProjectModal data={selectedProject} open={isModalOpen} close={handleCloseModal} />
-      )}
+        <ProjectModal data={selectedProject} isOpen={isModalOpen} setIsOpen={setIsModalOpen} />)}
 
     </section>
   );
 };
 
 export default Project;
+
 
