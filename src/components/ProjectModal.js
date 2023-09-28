@@ -36,13 +36,13 @@ const ProjectModal = ({ data, isOpen, setIsOpen }) => {
           <p className='leading-[1.6rem]'><span className='text-gray-dark font-semibold'>Client :</span> {data.client}</p>
           <p className='mt-4 leading-[1.6rem]'><span className='text-gray-dark font-semibold'>Présentation :</span> {data.presentation}</p>
           <p className='mt-4 leading-[1.6rem]'><span className='text-gray-dark font-semibold'>Objectifs :</span> {data.overview}</p>
-          <div>
+          <div className='mt-6'>
             {data.tags.map((tag, index) => (
-              <span key={index} className=" inline-block px-3 py-1 bg-pink-global text-off-white rounded-xl text-sm mt-6 mr-3 mb-2">{tag} </span>
+              <span key={index} className=" inline-block px-3 py-1 bg-pink-global text-off-white rounded-xl text-sm mt-2 mr-3 mb-2">{tag} </span>
             ))}
           </div>
           <div className={`flex items-end justify-end mt-7`}>
-            <a href={data.github} target="_blank" className="relative px-4 py-[10px] overflow-hidden font-medium text-gray-global text-sm bg-gray-100 border border-gray-100 rounded-xl shadow-inner group">
+            <a href={data.github} target="_blank" className="relative px-4 py-[10px] mb-5 overflow-hidden font-medium text-gray-global text-sm bg-gray-100 border border-gray-100 rounded-xl shadow-inner group">
               <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-pink-light group-hover:w-full ease"></span>
               <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-pink-light group-hover:w-full ease"></span>
               <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-pink-light group-hover:h-full ease"></span>
@@ -51,7 +51,7 @@ const ProjectModal = ({ data, isOpen, setIsOpen }) => {
               <span className="relative inline-flex items-center gap-2 transition-colors duration-300 delay-200 group-hover:text-white ease">Lien Github <FontAwesomeIcon icon={faUpRightFromSquare} className='text-xs transition-colors duration-300 delay-200 ease text-gray-global group-hover:text-white' /></span></a>
               
             {data.website ? (
-              <a href={data.website} target="_blank" className="relative px-4 py-[10px] ml-4 overflow-hidden font-medium text-gray-global text-sm group-hover:text-white bg-gray-100 border border-gray-100 rounded-xl shadow-inner group">
+              <a href={data.website} target="_blank" className="relative px-4 py-[10px] ml-4 mb-5 overflow-hidden font-medium text-gray-global text-sm group-hover:text-white bg-gray-100 border border-gray-100 rounded-xl shadow-inner group">
                 <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-pink-light group-hover:w-full ease"></span>
                 <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-pink-light group-hover:w-full ease"></span>
                 <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-pink-light group-hover:h-full ease"></span>

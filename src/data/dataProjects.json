@@ -1,28 +1,29 @@
 [
   {
     "id": "1",
+    "title": "The Gourmet",
+    "client": "The Gourmet - Restaurant Gastronomique",
+    "presentation": " En tant que développeur front-end, j'ai eu le privilège de collaborer avec le prestigieux restaurant gastronomique \"The Gourmet\" sur la création de leur site web. Mon rôle a consisté à transformer leur vision culinaire en une expérience en ligne qui reflète la sophistication et l'excellence du restaurant.",
+    "overview": " L'objectif principal était de concevoir un site web à la hauteur de la réputation de \"The Gourmet\". Cela impliquait de créer une interface élégante et interactive qui reflète l'essence même du restaurant. J'ai utilisé des technologies telles que HTML5, CSS3 et JavaScript pour réaliser ce site web, en y ajoutant des animations pour rendre l'expérience encore plus attrayante. Ce projet m'a permis de combiner ma passion pour le développement web avec l'appréciation de la fine cuisine, en créant une vitrine en ligne pour \"The Gourmet\" qui séduira les amateurs de gastronomie du monde entier.",
+    "github": "https://github.com/LudivineClement/theGourmet",
+    "website": "https://ludivineclement.github.io/theGourmet/",
+    "tags": ["HTML5", "CSS3", "JavaScript", "Animations"],
+    "img_cover": "img/mockup/small_mockup/mockup_gourmet_small.webp",
+    "img_info": "img/banner/banner_gourmet.png"
+  },   
+  {
+    "id": "2",
     "title": "Booki",
     "client": "Entreprise souhaitant développer un site web pour la recherche d'hébergements et d'activités.",
     "presentation": "Booki est un projet de développement web visant à créer un site permettant aux utilisateurs de trouver facilement des hébergements et des activités dans la ville de leur choix. Mon rôle en tant que développeuse Front-End était de prendre les maquettes fournies par l'UI designer, et de les intégrer en utilisant HTML et CSS.",
-    "overview": "Le principal défi était de rendre le projet compatible avec diverses tailles d'écran tout en respectant les spécifications de conception. Nous avons utilisé flexbox pour créer une mise en page adaptable, garantissant ainsi une expérience utilisateur uniforme sur tous les appareils. Notre équipe a travaillé en étroite collaboration avec les concepteurs pour intégrer harmonieusement les éléments visuels dans la mise en page, assurant ainsi une présentation esthétique et fonctionnelle sur les écrans larges de bureau, les tablettes et les smartphones.",
+    "overview": "Le principal défi était de rendre le projet compatible avec diverses tailles d'écran tout en respectant les spécifications de conception. J'ai utilisé flexbox pour créer une mise en page adaptable, garantissant ainsi une expérience utilisateur uniforme sur tous les appareils. J'ai travaillé en étroite collaboration avec les concepteurs pour intégrer harmonieusement les éléments visuels dans la mise en page, assurant ainsi une présentation esthétique et fonctionnelle sur les écrans larges de bureau, les tablettes et les smartphones.",
     "github": "https://github.com/LudivineClement/Booki",
     "website": "https://ludivineclement.github.io/Booki/",
     "tags": ["HTML5", "CSS3", "Responsive Web Design", "Figma"],
     "img_cover": "img/mockup/small_mockup/mockup_booki_small.webp",
     "img_info": "img/banner/banner_booki.png"    
   },
-  {
-    "id": "2",
-    "title": "Oh My Food!",
-    "client": "Startup de restauration.",
-    "presentation": "OhMyFood est une startup de restauration qui souhaite développer un site répertoriant les menus de restaurants gastronomiques. Mon rôle en tant que développeuse était de créer le site en respectant les maquettes fournies par l'équipe UX designer.",
-    "overview": "Le projet a été développé en suivant une approche 'mobile first', garantissant ainsi une expérience optimale pour les utilisateurs sur tous types d'écrans. De plus, j'ai intégré des animations fluides et naturelles pour augmenter l'interactivité du site.",
-    "github": "https://github.com/LudivineClement/oh_my_food",
-    "website": "https://ludivineclement.github.io/oh_my_food/",
-    "tags": ["HTML5", "CSS3", "Responsive Web Design", "Animations"],
-    "img_cover": "img/mockup/small_mockup/mockup_ohmyfood_small.webp",
-    "img_info": "img/banner/banner_ohmyfood.png"
-  },
+  
   {
     "id": "3",
     "title": "Kasa",
@@ -37,13 +38,38 @@
   },
   {
     "id": "4",
+    "title": "ArgentBank",
+    "client": "Banque en ligne qui souhaite évoluer dans le secteur bancaire",
+    "presentation": "En tant que développeuse front-end chez Argent Bank, ma mission principale était de créer un tableau de bord utilisateur avec un système d'authentification en utilisant React et Redux. Cette tâche impliquait la migration d'un site web existant en HTML/CSS vers cette nouvelle plateforme.",
+    "overview": "En tant que membre de l'équipe Argent Bank, j'ai joué un rôle central dans la mise en place de l'authentification utilisateur avec JWT (JSON Web Tokens) et Axios pour des appels API sécurisés. J'ai également dirigé la gestion des données via Redux, en permettant notamment aux utilisateurs de récupérer leurs informations en se connectant mais également pouvoir en modifier certaines s'ils le souhaitent. L'utilisation de Swagger a facilité la conception et la documentation des API, accélérant le développement de nouvelles fonctionnalités et renforçant la sécurité, les performances et l'expérience utilisateur dans l'application Argent Bank. Mon rôle a également englobé la définition des routes pour les transactions, simplifiant leur gestion future. J'ai également contribué au Green Code en optimisant les images pour améliorer les performances de l'application et en créant des composants réutilisables pour favoriser les bonnes pratiques de développement.",
+    "github": "https://github.com/LudivineClement/ArgentBank",
+    "tags": ["React", "Redux", "Green Code", "Axios","JWT", "MongoDB", "Swagger"],
+    "img_cover": "img/mockup/small_mockup/mockup_argentBank_small.webp",
+    "img_info": "img/banner/banner_argent.png"
+  } ,
+  {
+    "id": "5",
     "title": "Sophie Bluel",
     "client": "Agence ArchiWebos",
     "presentation": "En tant que développeuse front-end, j'ai aidé une équipe à finaliser le nouveau site internet d'une architecte d'intérieur. J'étais chargée de développer plusieurs fonctionnalités clés pour le site.",
-    "overview": "Mon rôle comprenait la création de la page de présentation des travaux de l'architecte, avec la possibilité de les filtrer par catégorie. J'ai également développé la page de connexion sécurisée de l'administrateur en utilisant JWT (JSON Web Tokens) pour l'authentification. De plus, j'ai conçu une modale permettant à l'architecte d'ajouter ou supprimer des projets. J'ai utilisé JavaScript pour créer dynamiquement les éléments en communiquant avec une API pour récupérer, ajouter et supprimer des travaux.",
+    "overview": "Mon rôle a englobé la création de la page de présentation des travaux de l'architecte avec des options de filtrage par catégorie, le développement de la page de connexion sécurisée de l'administrateur en utilisant JWT (JSON Web Tokens) pour l'authentification, et la conception d'une modale permettant à l'architecte d'ajouter ou de supprimer des projets. J'ai utilisé JavaScript pour créer dynamiquement les éléments en communiquant avec une API pour récupérer, ajouter et supprimer des travaux. Tout au long du projet, nous avons utilisé un tableau Kanban détaillé pour organiser notre travail de manière efficace.",
     "github": "https://github.com/LudivineClement/p6_Sophie_Bluel",
-    "tags": ["Node.js", "Figma", "HTML5", "CSS3", "JavaScript", "Swagger"],
+    "tags": ["Node.js", "Figma", "HTML5", "CSS3", "JavaScript", "JWT", "Swagger"],
     "img_cover": "img/mockup/small_mockup/mockup_sophieBluel_small.webp",
     "img_info": "img/banner/banner_sophieBluel.png"
-}  
+} ,
+{
+  "id": "6",
+  "title": "Oh My Food!",
+  "client": "Startup de restauration.",
+  "presentation": "OhMyFood est une startup de restauration qui souhaite développer un site répertoriant les menus de restaurants gastronomiques. Mon rôle en tant que développeuse était de créer le site en respectant les maquettes fournies par l'équipe UX designer.",
+  "overview": "Le projet a été soigneusement conçu en adoptant une approche 'mobile first', ce qui signifie que j'ai priorisé l'optimisation de l'expérience utilisateur sur les appareils mobiles. Cette stratégie garantit que les utilisateurs bénéficient d'une expérience fluide et réactive, quel que soit l'appareil qu'ils utilisent, allant des smartphones aux ordinateurs de bureau. De plus, pour rendre le site encore plus attrayant, j'ai intégré des animations fluides et naturelles. Ces animations ont été soigneusement créées pour améliorer l'interactivité du site, offrant ainsi aux visiteurs une expérience engageante et immersive.",
+  "github": "https://github.com/LudivineClement/oh_my_food",
+  "website": "https://ludivineclement.github.io/oh_my_food/",
+  "tags": ["HTML5", "CSS3", "Responsive Web Design", "Animations"],
+  "img_cover": "img/mockup/small_mockup/mockup_ohmyfood_small.webp",
+  "img_info": "img/banner/banner_ohmyfood.png"
+}
+
+
 ]
