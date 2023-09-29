@@ -78,7 +78,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className={`fixed w-full top-0 left-0 z-[100] transition-all duration-[500ms] ease-out bg-off-white shadow-2xl ${isScrolled ? 'lg:bg-off-white shadow-2xl ' : 'lg:bg-transparent lg:shadow-none'}`}>
+    <nav className={`fixed w-screen top-0 left-0 z-[100] transition-all duration-[500ms] ease-out bg-off-white shadow-2xl ${isScrolled ? 'lg:bg-off-white shadow-2xl ' : 'lg:bg-transparent lg:shadow-none'}`}>
       <div className="lg:flex lg:justify-between lg:items-center lg:py-6 lg:px-9 lg:mx-20">
         <Link href="#home" className={`font-kaushan text-[2rem] inline-block font-semibold text-gray-dark my-4 ml-4 lg:my-0 lg:ml-0 ${isScrolled ? 'lg:text-gray-dark' : 'lg:text-off-white'}`}>Portfolio</Link>
 
