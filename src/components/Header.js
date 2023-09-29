@@ -10,7 +10,7 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
-    <header data-section id='home' className="bg-banner-img bg-center bg-cover h-screen bg-fixed bg-gray-global before:absolute before:top-0 before:left-0 before:right-0 before:h-screen before:w-full before:bg-gradient-to-b from-black/60 to-black/20">
+    <header data-section id='home' className="bg-banner-img bg-top lg:bg-center bg-cover h-screen lg:bg-fixed bg-gray-global before:absolute before:top-0 before:left-0 before:right-0 before:h-screen before:w-full before:bg-gradient-to-b from-black/60 to-black/20">
       <Navbar />
       <div className="text-off-white absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-center">
         <TypeWriter />
