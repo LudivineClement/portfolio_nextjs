@@ -39,6 +39,7 @@ export default function RootLayout({ children }) {
     <html lang="fr" className='scroll-smooth'>
       <head>
         <link rel="manifest" href="img/favicon/site.webmanifest" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
       </head>
       <body className={`${kaushan.variable} ${poppins.variable} font-poppins text-gray-global bg-off-white`}>
         <Header />

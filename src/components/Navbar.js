@@ -78,15 +78,15 @@ const Navbar = () => {
 
 
   return (
-    <nav className={`fixed w-screen top-0 left-0 z-[100] transition-all duration-[500ms] ease-out bg-off-white shadow-2xl ${isScrolled ? 'lg:bg-off-white shadow-2xl ' : 'lg:bg-transparent lg:shadow-none'}`}>
-      <div className="lg:flex lg:justify-between lg:items-center lg:py-6 lg:px-9 lg:mx-20">
+    <nav className={`fixed w-screen top-0 left-0 z-[100] transition-all duration-[400ms] ease-out bg-off-white shadow-2xl ${isScrolled ? 'lg:bg-off-white shadow-2xl ' : 'lg:bg-transparent lg:shadow-none'}`}>
+      <div className=" lg:flex lg:justify-between lg:items-center lg:py-6 lg:px-9 lg:mx-20">
         <Link href="#home" className={`font-kaushan text-[2rem] inline-block font-semibold text-gray-dark my-4 ml-4 lg:my-0 lg:ml-0 ${isScrolled ? 'lg:text-gray-dark' : 'lg:text-off-white'}`}>Portfolio</Link>
 
         <div onClick={()=> setOpen(!open)} className='text-2xl text-gray-dark absolute right-8 top-6 cursor-pointer lg:hidden '>
           <FontAwesomeIcon icon={open ? faXmark : faBars} />
         </div>
 
-        <ul className={`absolute lg:static -z-10 lg:z-auto text-gray-light bg-off-white right-0 w-full lg:w-auto uppercase text-sm lg:text-[0.8rem] tracking-widest font-medium leading-[0.938rem] pt-8 border-t-2 border-solid border-pink-global lg:border-none transition-all duration-500 ease-in lg:transition-none lg:pt-0 lg:flex lg:items-center lg:gap-10 opacity-0 ${isScrolled ? 'lg:opacity-100' : 'lg:opacity-0'} ${open ? 'translate-x-0 opacity-100 text-center shadow-2xl ':'translate-x-full text-center lg:translate-x-0 '}`}>
+        <ul className={`absolute lg:static -z-10 lg:z-auto text-gray-light bg-off-white right-0 w-full lg:w-auto uppercase text-sm lg:text-[0.8rem] tracking-widest font-medium leading-[0.938rem] pt-8 border-t-2 border-solid border-pink-global lg:border-none transition-all duration-[400ms] ease-in lg:transition-none lg:pt-0 lg:flex lg:items-center lg:gap-10 opacity-0 ${isScrolled ? 'lg:opacity-100' : 'lg:opacity-0'} ${open ? 'translate-x-0 opacity-100 text-center shadow-2xl ':'translate-x-full text-center lg:translate-x-0 '}`}>
           {menuItems.map((menuItem) => (
             <li
               key={menuItem.section}
