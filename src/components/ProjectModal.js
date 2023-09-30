@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUpRightFromSquare, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faUpRightFromSquare} from "@fortawesome/free-solid-svg-icons";
+import { AiOutlineClose } from 'react-icons/ai';
 
 const ProjectModal = ({ data, isOpen, setIsOpen }) => {
 
@@ -17,7 +18,7 @@ const ProjectModal = ({ data, isOpen, setIsOpen }) => {
       onClick={handleClose}
     >
       <div
-        className={`bg-off-white scrollBar w-[50%] h-[90%] p-4 shadow-lg border-l-[5px] border-solid border-pink-global z-10 overflow-y-auto transition-transform duration-[1000ms] ease-in-out ${isOpen
+        className={`bg-off-white scrollBar w-2/3 lg:w-1/2 h-[90%] p-4 shadow-lg border-l-[5px] border-solid border-pink-global z-10 overflow-y-auto transition-transform duration-[1000ms] ease-in-out ${isOpen
           ? 'translate-x-0'
           : 'translate-x-full'
           }`}
@@ -27,7 +28,7 @@ const ProjectModal = ({ data, isOpen, setIsOpen }) => {
           onClick={handleClose}
           className="absolute top-10 left-4 text-gray-500 transition-colors duration-300 ease-in-out hover:text-gray-dark focus:outline-none"
         >
-          <FontAwesomeIcon icon={faXmark} className='text-2xl' />
+          <AiOutlineClose className='text-2xl' />
         </button>
         <div>
 

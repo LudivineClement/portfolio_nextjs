@@ -42,9 +42,9 @@ const Contact = () => {
     <section data-section id='contact' className='pt-24 px-12 -my-24 m-auto max-w-[1200px]'>
       <h2 className='mb-[30px] mt-24 font-kaushan text-[2.4rem] text-gray-dark'>Me contacter</h2>      
         <form className='mb-48 mt-14 form' onSubmit={handleSubmit}>
-          <div className="flex gap-[50px]">
+          <div className="lg:flex lg:gap-[50px]">
 
-            <div className="row1 w-3/6">
+            <div className="row1 lg:w-1/2">
               <div className="input_container relative mb-[60px]">
                 <input
                   type="text"
@@ -74,7 +74,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="row2 w-3/6">
+            <div className="row2 lg:w-1/2">
               <div className="input_container relative mb-[60px]">
                 <input
                   type="tel"

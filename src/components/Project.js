@@ -30,13 +30,13 @@ const Project = () => {
     <section
       data-section
       id='projects'
-      className='py-24 px-12 -my-24 m-auto max-w-[1250px]'
+      className=' px-6 py-[80px] -my-[80px] lg:py-24 lg:px-12 lg:-my-24 m-auto max-w-[1250px]'
     >
-      <h2 className='mb-[60px] mt-28 font-kaushan text-[2.4rem] text-gray-dark'>
+      <h2 className=' mb-[60px] mt-20 lg:mt-28 font-kaushan text-[2.4rem] text-gray-dark'>
         Derniers projets
       </h2>
       <div
-        className={`grid grid-cols-3 gap-x-8 gap-y-10 transition-transform duration-[1200ms] will-change-transform ease-in-out ${isModalOpen
+        className={`grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 transition-transform duration-[1200ms] will-change-transform ease-in-out ${isModalOpen
           ? 'translate-x-[-45%]'
           : 'translate-x-0'
           }`}

@@ -4,11 +4,11 @@ import dataSkills from '../data/dataSkills.json'
 
 const Skills = () => {
   return (
-    <section data-section id='skills' className='py-24 px-12 -my-24 m-auto text-off-white bg-bg-black bg-fixed bg-center bg-cover bg-gray-global brightness-[1.5]'>
-      <h2 className='mb-[30px] mt-4 font-kaushan text-[2.8rem]  text-center blur-[0.5px]'>Mes compétences</h2>
-      <div className="flex items-center gap-8 max-w-[850px] m-auto">
+    <section data-section id='skills' className=' px-6 py-[80px] -my-[80px] lg:py-24 lg:px-12 lg:-my-24 m-auto text-off-white bg-bg-black bg-fixed bg-center bg-cover bg-gray-global brightness-[1.5]'>
+      <h2 className='mb-[30px] mt-4 font-kaushan text-[2.5rem] lg:text-[2.8rem] text-center blur-[0.5px]'>Mes compétences</h2>
+      <div className="flex items-center gap-6 lg:gap-8 max-w-[850px] m-auto">
 
-        <div className="flex justify-between gap-x-7 gap-y-5 flex-wrap w-[70%] pr-[50px] mt-7 mb-5 border-r-[1px] border-solid border-gray-dark">
+        <div className="flex justify-between gap-x-5 lg:gap-x-7 gap-y-5 flex-wrap w-[70%] pr-6 lg:pr-[50px] mt-7 mb-5 border-r-[1px] border-solid border-gray-dark">
           {
             dataSkills.map((data, id) => (
               <div key={id} className=" [perspective:1000px] group bg-transparent w-[72px] h-[72px]">

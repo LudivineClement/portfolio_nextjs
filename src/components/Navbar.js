@@ -3,7 +3,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faEnvelope, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { RiMenu3Fill } from 'react-icons/ri';
+import { AiOutlineClose } from 'react-icons/ai';
+
 
 const Navbar = () => {
 
@@ -82,30 +85,30 @@ const Navbar = () => {
       <div className=" lg:flex lg:justify-between lg:items-center lg:py-6 lg:px-9 lg:mx-20  ">
         <Link href="#home" className={`font-kaushan text-[2rem] inline-block font-semibold text-gray-dark my-4 ml-4 lg:my-0 lg:ml-0 ${isScrolled ? 'lg:text-gray-dark' : 'lg:text-off-white'}`}>Portfolio</Link>
 
-        <div onClick={()=> setOpen(!open)} className='text-2xl text-gray-dark absolute right-8 top-6 cursor-pointer lg:hidden '>
-          <FontAwesomeIcon icon={open ? faXmark : faBars} />
-        </div>
+          <div onClick={() => setOpen(!open)} className='text-2xl text-gray-dark absolute right-6 top-7 cursor-pointer lg:hidden '>
+          {open ? <AiOutlineClose /> :  <RiMenu3Fill /> }
+          </div>
 
-        <ul className={`absolute lg:static -z-10 lg:z-auto text-gray-dark lg:text-gray-light bg-off-white lg:bg-transparent right-0 w-full lg:w-auto uppercase text-[0.938rem] lg:text-[0.8rem] tracking-widest font-medium leading-[0.938rem] pt-8 transition-all duration-500 ease-in lg:transition-none lg:pt-0 lg:flex lg:items-center lg:gap-10 opacity-0 ${isScrolled ? 'lg:opacity-100 lg:bg-transparent' : 'lg:opacity-0'} ${open ? 'translate-x-0 opacity-100 text-center shadow-2xl':'translate-x-full text-center lg:translate-x-0 '}`}>
-          {menuItems.map((menuItem) => (
-            <li
-              key={menuItem.section}
-              className={`${styleLink} `}
-            >
-              <Link href={`#${menuItem.section}`} style={isDesktop && activeSection === menuItem.section ? activeStyle : {}}>
-                {menuItem.text}
+          <ul className={`absolute lg:static -z-10 lg:z-auto text-gray-dark lg:text-gray-light bg-off-white lg:bg-transparent right-0 w-full lg:w-auto uppercase text-[0.938rem] lg:text-[0.8rem] tracking-widest font-medium leading-[0.938rem] pt-8 transition-all duration-500 ease-in lg:transition-none lg:pt-0 lg:flex lg:items-center lg:gap-10 opacity-0 ${isScrolled ? 'lg:opacity-100 lg:bg-transparent' : 'lg:opacity-0'} ${open ? 'translate-x-0 opacity-100 text-center shadow-2xl' : 'translate-x-full text-center lg:translate-x-0 '}`}>
+            {menuItems.map((menuItem) => (
+              <li
+                key={menuItem.section}
+                className={`${styleLink} `}
+              >
+                <Link href={`#${menuItem.section}`} style={isDesktop && activeSection === menuItem.section ? activeStyle : {}}>
+                  {menuItem.text}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link href='#contact' title='contact' className='hidden lg:inline-block'>
+                <FontAwesomeIcon icon={faEnvelope} style={isDesktop && activeSection === 'contact' ? activeContact : {}} className='text-[1.2rem] text-gray-dark pb-1 hover:text-pink-global transition-all duration-[400ms] ease-out' />
               </Link>
             </li>
-          ))}
-          <li>
-            <Link href='#contact' title='contact' className='hidden lg:inline-block'>
-              <FontAwesomeIcon icon={faEnvelope} style={isDesktop && activeSection === 'contact' ? activeContact : {}} className='text-[1.2rem] text-gray-dark pb-1 hover:text-pink-global transition-all duration-[400ms] ease-out' />
-            </Link>
-          </li>
-          <li className={`${styleLink} lg:hidden `}>
-            <Link href='#contact' className=' inline-block mb-4 lg:mb-0' style={isDesktop && activeSection === 'contact' ? activeStyle : {}}>Contact</Link>
-          </li>
-        </ul>
+            <li className={`${styleLink} lg:hidden `}>
+              <Link href='#contact' className=' inline-block mb-4 lg:mb-0' style={isDesktop && activeSection === 'contact' ? activeStyle : {}}>Contact</Link>
+            </li>
+          </ul>
       </div>
     </nav>
   );
