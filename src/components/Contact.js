@@ -39,13 +39,13 @@ const Contact = () => {
   };
 
   return (
-    <section data-section id='contact' className='pt-24 px-12 -my-24 m-auto max-w-[1200px]'>
-      <h2 className='mb-[30px] mt-24 font-kaushan text-[2.4rem] text-gray-dark'>Me contacter</h2>      
+    <section data-section id='contact' className='pt-24 px-5 md:px-8 lg:px-12 -my-24 m-auto max-w-[1200px]'>
+      <h2 className='mb-[30px] mt-12 lg:mt-24 font-kaushan text-[2.4rem] text-gray-dark'>Me contacter</h2>      
         <form className='mb-48 mt-14 form' onSubmit={handleSubmit}>
           <div className="lg:flex lg:gap-[50px]">
 
             <div className="row1 lg:w-1/2">
-              <div className="input_container relative mb-[60px]">
+              <div className="input_container relative mb-16 lg:mb-[60px]">
                 <input
                   type="text"
                   id="name"
@@ -59,7 +59,7 @@ const Contact = () => {
                 <div className="underline"></div>
               </div>
               
-              <div className="input_container relative mb-[60px]">
+              <div className="input_container relative mb-16 lg:mb-[60px]">
                 <input
                   type="email"
                   id="email"
@@ -75,7 +75,7 @@ const Contact = () => {
             </div>
 
             <div className="row2 lg:w-1/2">
-              <div className="input_container relative mb-[60px]">
+              <div className="input_container relative mb-16 lg:mb-[60px]">
                 <input
                   type="tel"
                   id="phone"
@@ -89,7 +89,7 @@ const Contact = () => {
                 <div className="under_line"></div>
               </div>
 
-              <div className="input_container relative mb-[60px]">
+              <div className="input_container relative mb-16 lg:mb-[60px]">
                 <input
                   type="text"
                   id="objet"
@@ -111,7 +111,7 @@ const Contact = () => {
               id="message"
               value={formData.message}
               onChange={handleChange}
-              className='peer block w-full h-[150px] mb-14 py-2 pl-[7px] text-[0.8rem] bg-transparent outline-none resize-none border-b border-[rgba(0, 0, 0, 0.1)] border-solid placeholder-transparent'
+              className='peer block w-full h-44 lg:h-[150px] mb-14 py-2 pl-[7px] text-[0.8rem] bg-transparent outline-none resize-none border-b border-[rgba(0, 0, 0, 0.1)] border-solid placeholder-transparent'
               placeholder='message'
               required>      
             </textarea>
@@ -120,7 +120,7 @@ const Contact = () => {
             <div className="underline"></div>
           </div>
 
-          <button type="submit" className="block uppercase font-medium pl-[2px] text-[0.85rem] leading-[0.875rem] tracking-widest shadow-[inset_0px_-6px_0px] shadow-pink-light transition-all duration-[400ms] ease-out hover:shadow-[inset_0px_-15px_0px] hover:shadow-pink-light">envoyer</button>
+          <button type="submit" className="block uppercase font-medium pl-[2px] text-[0.940rem] lg:text-[0.85rem] leading-[0.875rem] tracking-widest shadow-[inset_0px_-6px_0px] shadow-pink-light transition-all duration-[400ms] ease-out hover:shadow-[inset_0px_-15px_0px] hover:shadow-pink-light">envoyer</button>
         </form>
     </section>
   );

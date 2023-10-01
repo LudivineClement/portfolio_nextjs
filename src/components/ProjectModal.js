@@ -8,8 +8,7 @@ const ProjectModal = ({ data, isOpen, setIsOpen }) => {
 
   const handleClose = () => {
     setIsOpen(false);
-  };
-  
+  };  
 
   return (
     <div
@@ -18,7 +17,7 @@ const ProjectModal = ({ data, isOpen, setIsOpen }) => {
       onClick={handleClose}
     >
       <div
-        className={`bg-off-white scrollBar w-2/3 lg:w-1/2 h-[90%] p-4 shadow-lg border-l-[5px] border-solid border-pink-global z-10 overflow-y-auto transition-transform duration-[1000ms] ease-in-out ${isOpen
+        className={`bg-off-white scrollBar w-full md:w-2/3 lg:w-1/2 h-[90%] p-4 shadow-lg border-l-[5px] border-solid border-pink-global z-10 overflow-y-auto transition-transform duration-[1000ms] ease-in-out ${isOpen
           ? 'translate-x-0'
           : 'translate-x-full'
           }`}
@@ -32,11 +31,11 @@ const ProjectModal = ({ data, isOpen, setIsOpen }) => {
         </button>
         <div>
 
-          <img src={data.img_info} alt={data.client} className='h-[200px] object-cover m-auto mt-16 mb-10' />
+          <img src={data.img_info} alt={data.client} className='h-[120px] md:h-[150px] lg:h-[200px] object-cover m-auto mt-16 mb-10' />
 
-          <p className='leading-[1.6rem]'><span className='text-gray-dark font-semibold'>Client :</span> {data.client}</p>
-          <p className='mt-4 leading-[1.6rem]'><span className='text-gray-dark font-semibold'>Présentation :</span> {data.presentation}</p>
-          <p className='mt-4 leading-[1.6rem]'><span className='text-gray-dark font-semibold'>Objectifs :</span> {data.overview}</p>
+          <p className='text-[0.940rem] md:text-base lg:text-base leading-[1.6rem]'><span className='text-gray-dark font-semibold'>Client :</span> {data.client}</p>
+          <p className='mt-4 text-[0.940rem] md:text-base lg:text-base leading-[1.6rem]'><span className='text-gray-dark font-semibold'>Présentation :</span> {data.presentation}</p>
+          <p className='mt-4 text-[0.940rem] md:text-base lg:text-base leading-[1.6rem]'><span className='text-gray-dark font-semibold'>Objectifs :</span> {data.overview}</p>
           <div className='mt-6'>
             {data.tags.map((tag, index) => (
               <span key={index} className=" inline-block px-3 py-1 bg-pink-global text-off-white rounded-xl text-sm mt-2 mr-3 mb-2">{tag} </span>
