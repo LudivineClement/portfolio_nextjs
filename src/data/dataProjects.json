@@ -8,7 +8,7 @@
     "github": "https://github.com/LudivineClement/theGourmet",
     "website": "https://ludivineclement.github.io/theGourmet/",
     "tags": ["HTML5", "CSS3", "JavaScript", "Animations"],
-    "img_cover": "img/mockup/small_mockup/mockup_gourmet_small.webp",
+    "img_cover": "img/mockup/mockup_gourmet_small.webp",
     "img_info": "img/banner/banner_gourmet.png"
   },   
   {
@@ -20,7 +20,7 @@
     "github": "https://github.com/LudivineClement/Booki",
     "website": "https://ludivineclement.github.io/Booki/",
     "tags": ["HTML5", "CSS3", "Responsive Web Design", "Figma"],
-    "img_cover": "img/mockup/small_mockup/mockup_booki_small.webp",
+    "img_cover": "img/mockup/mockup_booki_small2.webp",
     "img_info": "img/banner/banner_booki.png"    
   },
   
@@ -33,7 +33,7 @@
     "github": "https://github.com/LudivineClement/kasa",
     "website": "https://kasa-rental.vercel.app/",
     "tags": ["React", "Node.js", "Sass", "Responsive Web Design", "Figma", "Animations CSS"],
-    "img_cover": "img/mockup/small_mockup/mockup_kasa_small.webp",
+    "img_cover": "img/mockup/mockup_kasa_small.webp",
     "img_info": "img/banner/banner_kasa.png"
   },
   {
@@ -44,9 +44,9 @@
     "overview": "En tant que membre de l'équipe Argent Bank, j'ai joué un rôle central dans la mise en place de l'authentification utilisateur avec JWT (JSON Web Tokens) et Axios pour des appels API sécurisés. J'ai également dirigé la gestion des données via Redux, en permettant notamment aux utilisateurs de récupérer leurs informations en se connectant mais également pouvoir en modifier certaines s'ils le souhaitent. L'utilisation de Swagger a facilité la conception et la documentation des API, accélérant le développement de nouvelles fonctionnalités et renforçant la sécurité, les performances et l'expérience utilisateur dans l'application Argent Bank. Mon rôle a également englobé la définition des routes pour les transactions, simplifiant leur gestion future. J'ai également contribué au Green Code en optimisant les images pour améliorer les performances de l'application et en créant des composants réutilisables pour favoriser les bonnes pratiques de développement.",
     "github": "https://github.com/LudivineClement/ArgentBank",
     "tags": ["React", "Redux", "Green Code", "Axios","JWT", "MongoDB", "Swagger"],
-    "img_cover": "img/mockup/small_mockup/mockup_argentBank_small.webp",
+    "img_cover": "img/mockup/mockup_argentBank_small.webp",
     "img_info": "img/banner/banner_argent.png"
-  } ,
+  },
   {
     "id": "5",
     "title": "Sophie Bluel",
@@ -55,7 +55,7 @@
     "overview": "Mon rôle a englobé la création de la page de présentation des travaux de l'architecte avec des options de filtrage par catégorie, le développement de la page de connexion sécurisée de l'administrateur en utilisant JWT (JSON Web Tokens) pour l'authentification, et la conception d'une modale permettant à l'architecte d'ajouter ou de supprimer des projets. J'ai utilisé JavaScript pour créer dynamiquement les éléments en communiquant avec une API pour récupérer, ajouter et supprimer des travaux. Tout au long du projet, nous avons utilisé un tableau Kanban détaillé pour organiser notre travail de manière efficace.",
     "github": "https://github.com/LudivineClement/p6_Sophie_Bluel",
     "tags": ["Node.js", "Figma", "HTML5", "CSS3", "JavaScript", "JWT", "Swagger"],
-    "img_cover": "img/mockup/small_mockup/mockup_sophieBluel_small.webp",
+    "img_cover": "img/mockup/mockup_sophie.webp",
     "img_info": "img/banner/banner_sophieBluel.png"
 } ,
 {
@@ -67,7 +67,7 @@
   "github": "https://github.com/LudivineClement/oh_my_food",
   "website": "https://ludivineclement.github.io/oh_my_food/",
   "tags": ["HTML5", "CSS3", "Responsive Web Design", "Animations"],
-  "img_cover": "img/mockup/small_mockup/mockup_ohmyfood_small.webp",
+  "img_cover": "img/mockup/mockup_ohmyfood_small.webp",
   "img_info": "img/banner/banner_ohmyfood.png"
 }
 
