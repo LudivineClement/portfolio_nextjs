@@ -31,7 +31,7 @@ const ProjectModal = ({ data, isOpen, setIsOpen }) => {
         </button>
         <div>
 
-          <img src={data.img_info} alt={data.client} className='h-[120px] md:h-[150px] lg:h-[200px] object-cover m-auto mt-16 mb-10' />
+          <img src={data.img_info} alt={data.client} className='h-[120px] md:h-[150px] lg:h-[200px] object-cover m-auto mt-20 md:mt-16 lg:mt-16 mb-10' />
 
           <p className='text-[0.940rem] md:text-base lg:text-base leading-[1.6rem]'><span className='text-gray-dark font-semibold'>Client :</span> {data.client}</p>
           <p className='mt-4 text-[0.940rem] md:text-base lg:text-base leading-[1.6rem]'><span className='text-gray-dark font-semibold'>Présentation :</span> {data.presentation}</p>
