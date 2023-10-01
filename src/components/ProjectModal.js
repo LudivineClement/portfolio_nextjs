@@ -12,7 +12,7 @@ const ProjectModal = ({ data, isOpen, setIsOpen }) => {
 
   return (
     <div
-      className={`fixed inset-0 flex justify-end items-end z-50 bg-black bg-opacity-50 transition-opacity duration-[500ms] ease-in-out ${isOpen ? '' : 'opacity-0 pointer-events-none'
+      className={`fixed inset-0 flex justify-end items-end z-50 transition-opacity duration-[500ms] ease-in-out ${isOpen ? 'bg-black bg-opacity-50' : 'pointer-events-none'
         }`}
       onClick={handleClose}
     >
