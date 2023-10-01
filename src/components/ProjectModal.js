@@ -33,9 +33,9 @@ const ProjectModal = ({ data, isOpen, setIsOpen }) => {
 
           <img src={data.img_info} alt={data.client} className='h-[120px] md:h-[150px] lg:h-[180px] object-cover m-auto mt-40 lg:mt-44 mb-10' />
 
-          <p className='text-[0.940rem] md:text-base lg:text-base leading-[1.6rem]'><span className='text-gray-dark font-semibold'>Client :</span> {data.client}</p>
-          <p className='mt-4 text-[0.940rem] md:text-base lg:text-base leading-[1.6rem]'><span className='text-gray-dark font-semibold'>Présentation :</span> {data.presentation}</p>
-          <p className='mt-4 text-[0.940rem] md:text-base lg:text-base leading-[1.6rem]'><span className='text-gray-dark font-semibold'>Objectifs :</span> {data.overview}</p>
+          <p className='text-[0.940rem] md:text-base leading-[1.6rem]'><span className='text-gray-dark font-semibold'>Client :</span> {data.client}</p>
+          <p className='mt-4 text-[0.940rem] md:text-base leading-[1.6rem]'><span className='text-gray-dark font-semibold'>Présentation :</span> {data.presentation}</p>
+          <p className='mt-4 text-[0.940rem] md:text-base leading-[1.6rem]'><span className='text-gray-dark font-semibold'>Objectifs :</span> {data.overview}</p>
           <div className='mt-6'>
             {data.tags.map((tag, index) => (
               <span key={index} className=" inline-block px-3 py-1 bg-pink-global text-off-white rounded-xl text-sm mt-2 mr-3 mb-2">{tag} </span>

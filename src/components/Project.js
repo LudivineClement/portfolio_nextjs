@@ -32,7 +32,7 @@ const Project = () => {
       id='projects'
       className='px-5 py-14 -my-14 md:px-6 md:py-20 md:-my-20 lg:py-24 lg:px-12 lg:-my-24 m-auto max-w-[1250px]'
     >
-      <h2 className='mb-10 md:mb-12 lg:mb-[60px] mt-[72px] lg:mt-28 font-kaushan text-3xl md:text-[2.4rem] lg:text-[2.4rem] text-gray-dark'>
+      <h2 className='mb-10 md:mb-12 lg:mb-[60px] mt-[72px] lg:mt-28 font-kaushan text-3xl md:text-[2.4rem] text-gray-dark'>
         Derniers projets
       </h2>
       <div
