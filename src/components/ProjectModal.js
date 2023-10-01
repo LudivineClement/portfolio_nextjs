@@ -17,7 +17,7 @@ const ProjectModal = ({ data, isOpen, setIsOpen }) => {
       onClick={handleClose}
     >
       <div
-        className={`bg-off-white scrollBar w-full md:w-2/3 lg:w-1/2 h-[90%] p-4 shadow-lg border-l-[5px] border-solid border-pink-global z-10 overflow-y-auto transition-transform duration-[1000ms] ease-in-out ${isOpen
+        className={`bg-off-white scrollBar w-full md:w-2/3 lg:w-1/2 h-full p-4 shadow-lg border-l-[5px] border-solid border-pink-global z-10 overflow-y-auto transition-transform duration-[1000ms] ease-in-out ${isOpen
           ? 'translate-x-0'
           : 'translate-x-full'
           }`}
@@ -25,13 +25,13 @@ const ProjectModal = ({ data, isOpen, setIsOpen }) => {
       >
         <button
           onClick={handleClose}
-          className="absolute top-10 left-4 text-gray-500 transition-colors duration-300 ease-in-out hover:text-gray-dark focus:outline-none"
+          className="absolute top-28 lg:top-32 left-4 text-gray-500 transition-colors duration-300 ease-in-out hover:text-gray-dark focus:outline-none"
         >
           <AiOutlineClose className='text-2xl' />
         </button>
         <div>
 
-          <img src={data.img_info} alt={data.client} className='h-[120px] md:h-[150px] lg:h-[200px] object-cover m-auto mt-20 md:mt-16 lg:mt-16 mb-10' />
+          <img src={data.img_info} alt={data.client} className='h-[120px] md:h-[150px] lg:h-[180px] object-cover m-auto mt-40 lg:mt-44 mb-10' />
 
           <p className='text-[0.940rem] md:text-base lg:text-base leading-[1.6rem]'><span className='text-gray-dark font-semibold'>Client :</span> {data.client}</p>
           <p className='mt-4 text-[0.940rem] md:text-base lg:text-base leading-[1.6rem]'><span className='text-gray-dark font-semibold'>Présentation :</span> {data.presentation}</p>

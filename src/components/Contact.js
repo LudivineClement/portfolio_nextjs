@@ -40,7 +40,7 @@ const Contact = () => {
 
   return (
     <section data-section id='contact' className='pt-24 px-5 md:px-8 lg:px-12 -my-24 m-auto max-w-[1200px]'>
-      <h2 className='mb-[30px] mt-12 lg:mt-24 font-kaushan text-[2.4rem] text-gray-dark'>Me contacter</h2>      
+      <h2 className='mb-[30px] mt-12 lg:mt-24 font-kaushan text-3xl md:text-[2.4rem] lg:text-[2.4rem] text-gray-dark'>Me contacter</h2>      
         <form className='mb-48 mt-14 form' onSubmit={handleSubmit}>
           <div className="lg:flex lg:gap-[50px]">
 
