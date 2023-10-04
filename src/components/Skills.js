@@ -32,9 +32,9 @@ const Skills = () => {
 
         <div className="w-full flex items-center flex-row-reverse justify-around gap-5 md:block md:w-[30%] lg:w-[30%] ">
           <ul className="pb-0 md:pb-5 lg:pb-5 text-gray-global md:border-b md:border-solid md:border-gray-dark">
-            <li className='mt-3 mb-2 md:mt-0 md:mb-0'>▸ Référencement SEO</li>
-            <li className='mb-2 md:mb-0'>▸ Méthode agile</li>
-            <li className='mb-2  md:mb-0'>▸ Accessibilité</li>
+            <li className='mb-1 md:mb-0'>▸ Référencement SEO</li>
+            <li className='mb-1 md:mb-0'>▸ Méthode agile</li>
+            <li className='mb-1  md:mb-0'>▸ Accessibilité</li>
           </ul>
           <ul className="pt-0 md:pt-5 text-gray-global">
             <li>▸ Rigueur</li>

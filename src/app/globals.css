@@ -43,6 +43,7 @@ body::-webkit-scrollbar-thumb, .scrollBar::-webkit-scrollbar-thumb {
 .input_container input[type="email"]:focus ~ .underline,
 .input_container input[type="email"]:valid ~ .underline,
 .input_container input[type="tel"]:focus ~ .under_line,
+.input_container input[type="tel"]:valid ~ .under_line,
 .form .input_container textarea:focus ~ .underline,
 .form .input_container textarea:valid ~ .underline {
   border-bottom: 1px solid #292929;

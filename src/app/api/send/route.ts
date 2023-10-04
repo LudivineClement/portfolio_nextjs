@@ -15,11 +15,11 @@ export async function POST(req: Request) {
   });
 
   const mailOptions: nodemailer.SendMailOptions = {
-    from: request.email, // adresse de l'expéditeur
-    to: process.env.EMAIL_USER, // liste des destinataires
-    subject: request.subject, // objet du message
-    text: `Téléphone: ${request.tel}\n\n${request.message}`, // corps du message en texte brut
-    html: `<div>Téléphone: ${request.tel}</div><div>${request.message}</div>` // corps du message au format HTML
+    from: request.email,
+    to: process.env.EMAIL_USER,
+    subject: request.subject,
+    text: `Téléphone: ${request.tel}\n\n${request.message}`, 
+    html: `<div>Téléphone: ${request.tel}</div><div>${request.message}</div>`
   };
   
 
