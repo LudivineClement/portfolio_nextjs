@@ -14,16 +14,18 @@ const Header = () => {
       <Navbar />
       <div className="text-off-white absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-center">
         <TypeWriter />
-        <div className=" flex gap-6 justify-center">
-          <Link href="https://github.com/LudivineClement?tab=repositories" target="_blank" title='Github'>
-            <Image
-              src="/img/icons/icon-github.png"
-              alt="icône de github"
-              width={20}
-              height={20}
-              className='hover:brightness-75 transition-all duration-300 ease-in-out'
-            />
-          </Link>
+        <div
+          className=" flex gap-6 justify-center">
+            <Link href="https://github.com/LudivineClement?tab=repositories" target="_blank" title='Github'>
+              <Image
+                src="/img/icons/icon-github.png"
+                alt="icône de github"
+                width={20}
+                height={20}
+                className='hover:brightness-75 transition-all duration-300 ease-in-out'
+              />
+            </Link>
+
           <Link href="https://www.instagram.com/" target="_blank" title='Instagram'>
             <Image
               src="/img/icons/icon-instagram.png"
@@ -55,7 +57,7 @@ const Header = () => {
       </div>
       <div className='absolute left-1/2 translate-x-[-50%] bottom-12 '>
         <Link href="#about">
-        <FontAwesomeIcon icon={faChevronDown} bounce className='text-off-white text-3xl' />
+          <FontAwesomeIcon icon={faChevronDown} bounce className='text-off-white text-3xl' />
         </Link>
       </div>
     </header>
