@@ -17,7 +17,7 @@ const ProjectModal = ({ data, isOpen, setIsOpen }) => {
       onClick={handleClose}
     >
       <div
-        className={`bg-off-white scrollBar w-full md:w-2/3 lg:w-1/2 h-full p-4 shadow-lg border-l-[5px] border-solid border-pink-global z-10 overflow-y-auto transition-transform duration-[1000ms] ease-in-out ${isOpen
+        className={`bg-off-white scrollBar w-screen md:w-2/3 lg:w-1/2 h-full p-4 shadow-lg border-l-[5px] border-solid border-pink-global z-10 overflow-y-auto transition-transform duration-[1000ms] ease-in-out ${isOpen
           ? 'translate-x-0'
           : 'translate-x-full'
           }`}
