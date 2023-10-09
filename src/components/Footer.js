@@ -1,12 +1,21 @@
+'use client'
+
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { motion } from "framer-motion"
 
 
 const Footer = () => {
   return (
     <footer className='bg-bg-black bg-center bg-cover p-8'>
-      <div className=" flex gap-9 justify-center">
+      <div className=" flex gap-9 justify-center ">
+        <motion.div
+          initial={{ opacity: 0, y: -80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: false }}
+        >
           <Link href="https://github.com/LudivineClement?tab=repositories" target="_blank">
             <Image
               src="/img/icons/icon-github.png"
@@ -16,6 +25,14 @@ const Footer = () => {
               className='hover:brightness-75 transition-all duration-300 ease-in-out'
             />
           </Link>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: -80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay:0.2 }}
+          viewport={{ once: false }}
+        >
           <Link href="https://www.instagram.com/" target="_blank">
             <Image
               src="/img/icons/icon-instagram.png"
@@ -25,6 +42,14 @@ const Footer = () => {
               className='hover:brightness-75 transition-all duration-300 ease-in-out'
             />
           </Link>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: -80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay:0.3 }}
+          viewport={{ once: false }}
+        >
           <Link href="https://fr.linkedin.com/" target="_blank">
             <Image
               src="/img/icons/icon-linkedin.png"
@@ -34,6 +59,14 @@ const Footer = () => {
               className='hover:brightness-75 transition-all duration-300 ease-in-out'
             />
           </Link>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: -80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay:0.4 }}
+          viewport={{ once: false }}
+        >
           <Link href="https://twitter.com/?lang=fr" target="_blank">
             <Image
               src="/img/icons/icon-twitterx.png"
@@ -43,7 +76,9 @@ const Footer = () => {
               className='hover:brightness-75 transition-all duration-300 ease-in-out'
             />
           </Link>
-        </div>
+        </motion.div>
+
+      </div>
 
     </footer>
   );

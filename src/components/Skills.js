@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import dataSkills from '../data/dataSkills.json'
+import { motion } from "framer-motion"
 
 const Skills = () => {
   return (
@@ -8,7 +9,13 @@ const Skills = () => {
       <h2 className='mb-[30px] mt-4 font-kaushan text-[2.5rem] lg:text-[2.8rem] text-center blur-[0.5px]'>Mes compétences</h2>
       <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-8 max-w-[850px] m-auto md:m-">
 
-        <div className="flex justify-center md:justify-between gap-x-5 lg:gap-x-7 gap-y-5 flex-wrap w-full md:w-[70%] lg:w-[70%] pb-16 md:pr-6 lg:pr-[50px] mt-7 md:pt-12 mb-5 border-b-[1px] md:border-b-0 md:border-r-[1px] border-solid border-gray-dark">
+        <motion.div
+          className="flex justify-center md:justify-between gap-x-5 lg:gap-x-7 gap-y-5 flex-wrap w-full md:w-[70%] lg:w-[70%] pb-16 md:pr-6 lg:pr-[50px] mt-7 md:pt-12 mb-5 border-b-[1px] md:border-b-0 md:border-r-[1px] border-solid border-gray-dark"
+          initial={{ opacity: 0, y: 150 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
           {
             dataSkills.map((data, id) => (
               <div key={id} className=" [perspective:1000px] group bg-transparent w-[72px] h-[72px]">
@@ -28,9 +35,15 @@ const Skills = () => {
                 </div>
               </div>
             ))}
-        </div>
+        </motion.div>
 
-        <div className="w-full flex items-center flex-row-reverse justify-around gap-5 md:block md:w-[30%] lg:w-[30%] ">
+        <motion.div
+          className="w-full flex items-center flex-row-reverse justify-around gap-5 md:block md:w-[30%] lg:w-[30%] "
+          initial={{ opacity: 0, y: 150 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay:0.3 }}
+          viewport={{ once: true }}
+        >
           <ul className="pb-0 md:pb-5 lg:pb-5 text-gray-global md:border-b md:border-solid md:border-gray-dark">
             <li className='mb-1 md:mb-0'>▸ Référencement SEO</li>
             <li className='mb-1 md:mb-0'>▸ Méthode agile</li>
@@ -42,7 +55,7 @@ const Skills = () => {
             <li>▸ Adaptibilité</li>
             <li>▸ Curiosité</li>
           </ul>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

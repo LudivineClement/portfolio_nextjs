@@ -6,6 +6,7 @@ import Link from 'next/link';
 import TypeWriter from './TypeWriter';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion"
 
 
 const Header = () => {
@@ -16,6 +17,13 @@ const Header = () => {
         <TypeWriter />
         <div
           className=" flex gap-6 justify-center">
+
+          <motion.div
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: false }}
+          >
             <Link href="https://github.com/LudivineClement?tab=repositories" target="_blank" title='Github'>
               <Image
                 src="/img/icons/icon-github.png"
@@ -25,34 +33,58 @@ const Header = () => {
                 className='hover:brightness-75 transition-all duration-300 ease-in-out'
               />
             </Link>
+          </motion.div>
 
-          <Link href="https://www.instagram.com/" target="_blank" title='Instagram'>
-            <Image
-              src="/img/icons/icon-instagram.png"
-              alt="icône d'instagram'"
-              width={20}
-              height={20}
-              className='hover:brightness-75 transition-all duration-300 ease-in-out'
-            />
-          </Link>
-          <Link href="https://fr.linkedin.com/" target="_blank" title='Linkedin'>
-            <Image
-              src="/img/icons/icon-linkedin.png"
-              alt="icône de Linkedin"
-              width={20}
-              height={20}
-              className='hover:brightness-75 transition-all duration-300 ease-in-out'
-            />
-          </Link>
-          <Link href="https://twitter.com/?lang=fr" target="_blank" title='Twitter X'>
-            <Image
-              src="/img/icons/icon-twitterx.png"
-              alt="icône de Twitter"
-              width={20}
-              height={20}
-              className='hover:brightness-75 transition-all duration-300 ease-in-out'
-            />
-          </Link>
+          <motion.div
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: false }}
+          >
+            <Link href="https://www.instagram.com/" target="_blank" title='Instagram'>
+              <Image
+                src="/img/icons/icon-instagram.png"
+                alt="icône d'instagram'"
+                width={20}
+                height={20}
+                className='hover:brightness-75 transition-all duration-300 ease-in-out'
+              />
+            </Link>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            viewport={{ once: false }}
+          >
+            <Link href="https://fr.linkedin.com/" target="_blank" title='Linkedin'>
+              <Image
+                src="/img/icons/icon-linkedin.png"
+                alt="icône de Linkedin"
+                width={20}
+                height={20}
+                className='hover:brightness-75 transition-all duration-300 ease-in-out'
+              />
+            </Link>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: false }}
+          >
+            <Link href="https://twitter.com/?lang=fr" target="_blank" title='Twitter X'>
+              <Image
+                src="/img/icons/icon-twitterx.png"
+                alt="icône de Twitter"
+                width={20}
+                height={20}
+                className='hover:brightness-75 transition-all duration-300 ease-in-out'
+              />
+            </Link>
+          </motion.div>
         </div>
       </div>
       <div className='absolute left-1/2 translate-x-[-50%] bottom-12 '>
