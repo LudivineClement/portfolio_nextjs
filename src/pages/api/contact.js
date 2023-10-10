@@ -2,7 +2,7 @@ import nodemailer from "nodemailer"
 
 export default async function contactAPI(req, res) {
   const { name, email, tel, subject, message } = req.body
-  const user = process.env.EMAIL_USER
+  const user = process.env.EMAIL_USER;
 
   const transporter = nodemailer.createTransport({
     host: process.env.EMAIL_HOST,
