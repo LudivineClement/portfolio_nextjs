@@ -12,13 +12,16 @@ export default async function contactAPI(req, res) {
       user: user,
       pass: process.env.EMAIL_PASSWORD,
     },
+    tls: {
+      rejectUnauthorized: false
+  }
   });
 
   try {
     const mail = await transporter.sendMail({
       from: user,
       to: user,
-      replyTo: email,
+      replyTo: user,
       subject: `Message from ${name}`,
       html: `
       <p> Objet: ${subject} <p>
