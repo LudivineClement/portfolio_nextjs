@@ -51,23 +51,18 @@ body::-webkit-scrollbar-thumb, .scrollBar::-webkit-scrollbar-thumb {
 }
 
 @keyframes roll {
-  0%, 10% {
-    left: -20px;
+  0%, 100% {
+    left: -5px;
     transform: translateX(0);
   }
-  30%, 50% {
-    left: 70px;
+  50% {
+    left: 71px;
     transform: translateX(100%);
-  }
-  70%, 100% {
-    left: -20px;
-    transform: translateX(0);
   }
 }
 
 .animate-roll {
-  animation: roll 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation: roll 8s cubic-bezier(0.4, 0, 0.2, 1) infinite ;
 }
-
 
 
