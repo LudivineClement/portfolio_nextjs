@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 
 const Footer = () => {
   return (
-    <footer className='bg-bg-black bg-center bg-cover p-8'>
+    <footer className='bg-bg-black bg-center bg-cover p-8 mt-40'>
       <div className=" flex gap-9 justify-center ">
         <motion.div
           initial={{ opacity: 0, y: -80 }}
