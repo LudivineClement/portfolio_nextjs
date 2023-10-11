@@ -147,7 +147,10 @@ const Contact = () => {
 
         <div className='w-full lg:w-2/5  bg-gray-100 p-4 md:p-10 rounded-lg border border-gray-100 shadow-md mt-16 lg:mt-10 mb-5'>
           <h4 className='text-gray-dark text-lg font-medium mb-4'>Coordonnées <span className='text-pink-global'>de Contact</span></h4>
-
+          <div class="relative">
+              <div class="h-[2px] w-20 bg-pink-global mt-2"></div>
+              <div class="absolute h-2 w-2 bg-gray-dark -top-[3px] rounded-full animate-roll" ></div>
+            </div>
           <div className='flex items-center gap-4 mt-8 group' >
             <a href='mailto:ludivine.clement0985@gmail.com' target='blank' className='p-3 text-xl inline-block lg:text-3xl bg-gray-200 transition-colors duration-500 group-hover:text-off-white group-hover:bg-pink-global'><BsEnvelopeAtFill /></a>
             <div >
@@ -177,9 +180,7 @@ const Contact = () => {
                 Nogent le Rotrou, Eure et Loir
               </a>
             </div>
-
           </div>
-
         </div>
       </div>
     </section >
