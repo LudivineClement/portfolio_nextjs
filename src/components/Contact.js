@@ -145,7 +145,7 @@ const Contact = () => {
           </button>
         </form>
 
-        <div className='w-full lg:w-2/5  bg-gray-100 p-4 md:p-10 rounded-lg border border-gray-100 shadow-md mt-16 lg:mt-10 mb-5'>
+        <div className='w-full lg:w-2/5  bg-gray-100 px-4 py-8 md:p-10 rounded-lg border border-gray-100 shadow-md mt-16 lg:mt-10 mb-5'>
           <h4 className='text-gray-dark text-lg font-medium mb-4'>Coordonnées <span className='text-pink-global'>de Contact</span></h4>
           <div class="relative">
               <div class="h-[2px] w-20 bg-pink-global mt-2"></div>

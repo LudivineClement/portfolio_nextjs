@@ -62,7 +62,7 @@ body::-webkit-scrollbar-thumb, .scrollBar::-webkit-scrollbar-thumb {
 }
 
 .animate-roll {
-  animation: roll 8s cubic-bezier(0.4, 0, 0.2, 1) infinite ;
+  animation: roll 6s cubic-bezier(0.4, 0, 0.2, 1) infinite ;
 }
 
 
