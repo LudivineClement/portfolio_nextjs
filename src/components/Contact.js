@@ -145,44 +145,40 @@ const Contact = () => {
           </button>
         </form>
 
-        <div className='w-full lg:w-2/5  bg-gray-100 p-10 rounded-lg border border-gray-100 shadow-md mt-16 lg:mt-10 mb-5'>
+        <div className='w-full lg:w-2/5  bg-gray-100 p-4 md:p-10 rounded-lg border border-gray-100 shadow-md mt-16 lg:mt-10 mb-5'>
           <h4 className='text-gray-dark text-lg font-medium mb-4'>Coordonnées <span className='text-pink-global'>de Contact</span></h4>
 
           <div className='flex items-center gap-4 mt-8 group' >
-            <div className='p-3 bg-gray-200 transition-colors duration-500 group-hover:text-off-white group-hover:bg-pink-global'>
-              <BsEnvelopeAtFill className='text-3xl' />
-            </div>
+            <a href='mailto:ludivine.clement0985@gmail.com' target='blank' className='p-3 text-xl inline-block lg:text-3xl bg-gray-200 transition-colors duration-500 group-hover:text-off-white group-hover:bg-pink-global'><BsEnvelopeAtFill /></a>
             <div >
-              <p className='text-base'>Envoyer un email</p>
-              <a href='mailto:ludivine.clement0985@gmail.com' className='text-pink-global text-sm transition-colors duration-500 group-hover:text-pink-light'>ludivine.clement0985@gmail.com</a>
+              <p className='text-sm md:text-base'>Envoyer un email</p>
+              <a href='mailto:ludivine.clement0985@gmail.com' target='blank' className='text-pink-global break-all text-sm transition-colors duration-500 group-hover:text-pink-light'>ludivine.clement0985@gmail.com</a>
             </div>
-            
+
           </div>
 
           <hr className='color-gray my-8' />
 
-          <div className='flex items-center gap-4 group' >
-            <div className='p-3 bg-gray-200 transition-colors duration-500 group-hover:text-off-white group-hover:bg-pink-global'>
-              <FaPhoneVolume className='text-3xl' />
-            </div>
+          <div className='flex items-center gap-4 mt-8 group' >
+            <a href='tel:0768615727' className='p-3 text-xl inline-block lg:text-3xl bg-gray-200 transition-colors duration-500 group-hover:text-off-white group-hover:bg-pink-global'><FaPhoneVolume /></a>
             <div >
-              <p className='text-base'>Numéro de téléphone</p>
+              <p className='text-sm md:text-base'>Numéro de téléphone</p>
               <a href='tel:0768615727' className='text-pink-global text-sm transition-colors duration-200 group-hover:text-pink-light'>Contacter par téléphone</a>
             </div>
           </div>
 
           <hr className='color-gray my-8' />
 
-          <div className='flex items-center gap-4 mt-10 group' >
-            <div className='p-3 bg-gray-200 transition-colors duration-500 group-hover:text-off-white group-hover:bg-pink-global'>
-              <ImLocation2 className='text-3xl ' />
-            </div>
-            <div >
+          <div className='flex items-center gap-4 mt-8 group' >
+            <a href='https://www.google.com/maps?q=Nogent+le+Rotrou,+Eure+et+Loir' target='blank' className='p-3 text-xl inline-block lg:text-3xl bg-gray-200 transition-colors duration-500 group-hover:text-off-white group-hover:bg-pink-global'> <ImLocation2 /></a>
+            <div>
               <p className='text-base'>Localisation</p>
-              <p className='text-pink-global text-sm '>Nogent le Rotrou, Eure et Loir</p>
+              <a href='https://www.google.com/maps?q=Nogent+le+Rotrou,+Eure+et+Loir' className='text-pink-global text-sm transition-colors duration-200 group-hover:text-pink-light' target='_blank'>
+                Nogent le Rotrou, Eure et Loir
+              </a>
             </div>
-          </div>
 
+          </div>
 
         </div>
       </div>
