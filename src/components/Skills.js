@@ -37,25 +37,34 @@ const Skills = () => {
             ))}
         </motion.div>
 
-        <motion.div
+        <div
           className="w-full flex items-center flex-row-reverse justify-around gap-5 md:block md:w-[30%] lg:w-[30%] "
+          
+        >
+          <motion.ul 
+          className="pb-0 md:pb-5 lg:pb-5 text-gray-global md:border-b md:border-solid md:border-gray-dark"
           initial={{ opacity: 0, scale:0}}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
           viewport={{ once: true }}
-        >
-          <ul className="pb-0 md:pb-5 lg:pb-5 text-gray-global md:border-b md:border-solid md:border-gray-dark">
+          >
             <li className='mb-1 md:mb-0'>▸ Référencement SEO</li>
             <li className='mb-1 md:mb-0'>▸ Méthode agile</li>
             <li className='mb-1  md:mb-0'>▸ Accessibilité</li>
-          </ul>
-          <ul className="pt-0 md:pt-5 text-gray-global">
+          </motion.ul>
+          <motion.ul 
+          className="pt-0 md:pt-5 text-gray-global"
+          initial={{ opacity: 0, scale:0}}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, delay: 0.6 }}
+          viewport={{ once: true }}
+          >
             <li>▸ Rigueur</li>
             <li>▸ Autonomie</li>
             <li>▸ Adaptibilité</li>
             <li>▸ Curiosité</li>
-          </ul>
-        </motion.div>
+          </motion.ul>
+        </div>
       </div>
     </section>
   );

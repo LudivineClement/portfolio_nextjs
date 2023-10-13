@@ -228,7 +228,7 @@ const Contact = () => {
             className='flex items-center gap-4 mt-8 group'
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 1 }}
+            transition={{ duration: 0.7, delay: 0.8 }}
             viewport={{ once: true }}
           >
             <a href='https://www.google.com/maps?q=Nogent+le+Rotrou,+Eure+et+Loir' target='blank' className='p-3 text-xl inline-block lg:text-3xl bg-gray-200 transition-colors duration-500 group-hover:text-off-white group-hover:bg-pink-global'> <ImLocation2 /></a>

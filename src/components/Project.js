@@ -49,6 +49,7 @@ const Project = () => {
             github={data.github}
             url={data.website}
             ToggleProjectInfo={() => handleProjectSelect(data)}
+            id={id}
           />
         ))}
       </div>

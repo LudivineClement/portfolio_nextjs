@@ -1,10 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlus, faLink } from "@fortawesome/free-solid-svg-icons";
 import { BsGithub } from 'react-icons/bs';
+import { motion } from "framer-motion";
 
-const ProjectCard = ({ img, title, github, url, ToggleProjectInfo }) => {
+const ProjectCard = ({ img, title, github, url, ToggleProjectInfo, id }) => {
+  
+  const animationProject = {
+    initial: {
+      opacity: 0,
+    },
+    animate: (id) => ({
+      opacity: 1,
+      transition: {
+        duration: 1.5,
+        delay: 0.3 * id,
+      },
+    })
+  }
   const handleClick = () => {
     if (window.innerWidth > 1024) {
       ToggleProjectInfo();
@@ -17,7 +31,15 @@ const ProjectCard = ({ img, title, github, url, ToggleProjectInfo }) => {
     }
   };
   return (
-    <div className="bg-white group relative overflow-hidden h-[400px] cursor-pointer shadow-sm will-change-transform">
+    <motion.div
+      onClick={handleClick}
+      variants={animationProject}
+      initial="initial"
+      whileInView="animate"
+      custom={id}
+      viewport={{ once: true }}
+      className="bg-white group relative overflow-hidden h-[400px] cursor-pointer shadow-sm will-change-transform"
+    >
       <img
         src={img}
         alt={title}
@@ -27,7 +49,7 @@ const ProjectCard = ({ img, title, github, url, ToggleProjectInfo }) => {
       <div onClick={handleClickMobile} className='absolute w-full flex flex-col items-center justify-center lg:justify-normal overflow-hidden bg-pink-global h-0 z-10 lg:cursor-default -bottom-5 p-4 group-hover:lg:h-[100px] group-hover:h-full group-hover:opacity-80 group-hover:bottom-0 transition-bottom duration-500 ease-in-out opacity-90'>
 
         <h3 className=' text-3xl lg:text-[1.7rem] opacity-100 text-black font-kaushan font-semibold'>{title}</h3>
-        
+
         <div className='flex justify-center m-3 items-center'>
           <div title='Voir plus' onClick={ToggleProjectInfo}><FontAwesomeIcon icon={faCirclePlus} className='text-black text-4xl lg:text-base mx-2 lg:mx-[5px] mt-[15px] lg:mt-0 transition-transform duration-200 opacity-100 ease-in hover:scale-125 cursor-pointer' /></div>
 
@@ -37,7 +59,7 @@ const ProjectCard = ({ img, title, github, url, ToggleProjectInfo }) => {
           ) : null}
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 };
 
