@@ -44,25 +44,9 @@ body::-webkit-scrollbar-thumb, .scrollBar::-webkit-scrollbar-thumb {
 .input_container input[type="email"]:valid ~ .underline,
 .input_container input[type="tel"]:focus ~ .under_line,
 .input_container input[type="tel"]:valid ~ .under_line,
-.form .input_container textarea:focus ~ .underline,
-.form .input_container textarea:valid ~ .underline {
+.input_container textarea:focus ~ .underline,
+.input_container textarea:valid ~ .underline {
   border-bottom: 1px solid #292929;
   transform: scaleX(1);
 }
-
-@keyframes roll {
-  0%, 100% {
-    left: -5px;
-    transform: translateX(0);
-  }
-  50% {
-    left: 71px;
-    transform: translateX(100%);
-  }
-}
-
-.animate-roll {
-  animation: roll 6s cubic-bezier(0.4, 0, 0.2, 1) infinite ;
-}
-
 

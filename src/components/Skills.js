@@ -11,8 +11,8 @@ const Skills = () => {
 
         <motion.div
           className="flex justify-center md:justify-between gap-x-5 lg:gap-x-7 gap-y-5 flex-wrap w-full md:w-[70%] lg:w-[70%] pb-16 md:pr-6 lg:pr-[50px] mt-7 md:pt-12 mb-5 border-b-[1px] md:border-b-0 md:border-r-[1px] border-solid border-gray-dark"
-          initial={{ opacity: 0, y: 150 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, scale:0 }}
+          whileInView={{ opacity: 1, scale:1}}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
@@ -39,9 +39,9 @@ const Skills = () => {
 
         <motion.div
           className="w-full flex items-center flex-row-reverse justify-around gap-5 md:block md:w-[30%] lg:w-[30%] "
-          initial={{ opacity: 0, y: 150 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay:0.3 }}
+          initial={{ opacity: 0, scale:0}}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, delay: 0.3 }}
           viewport={{ once: true }}
         >
           <ul className="pb-0 md:pb-5 lg:pb-5 text-gray-global md:border-b md:border-solid md:border-gray-dark">
