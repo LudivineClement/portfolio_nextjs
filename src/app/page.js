@@ -18,6 +18,10 @@ const Home = () => {
       <Project />
       <SectionCTA />
       <Contact />
+      <ToastContainer
+        position="bottom-right"
+        autoClose={3000}
+      />
     </div>
   );
 };
