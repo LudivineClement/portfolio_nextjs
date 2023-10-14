@@ -10,12 +10,14 @@ const ProjectCard = ({ img, title, github, url, ToggleProjectInfo, id }) => {
   const animationProject = {
     initial: {
       opacity: 0,
+      y: 70,
     },
     animate: (id) => ({
+      y: 0,
       opacity: 1,
       transition: {
-        duration: 1.5,
-        delay: 0.3 * id,
+        duration: 0.5,
+        delay: 0.2 * id,
       },
     })
   }
