@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { BsEnvelopeAtFill } from 'react-icons/bs';
 import { FaPhoneVolume } from 'react-icons/fa6';
 import { ImLocation2 } from 'react-icons/im';
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion"
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -182,9 +184,18 @@ const Contact = () => {
             transition={{ duration: 0.7, delay: 0.3 }}
             viewport={{ once: true }}
             type="submit"
-            className="block uppercase font-medium pl-[2px] text-[0.940rem] lg:text-[0.85rem] leading-[0.875rem] tracking-widest shadow-[inset_0px_-6px_0px] shadow-pink-light transition-all duration-[400ms] ease-out hover:shadow-[inset_0px_-15px_0px] hover:shadow-pink-light">
-            {isSubmitting ? "En cours..." : "Envoyer"}
+            className="block uppercase font-medium pl-[2px] text-[0.940rem] lg:text-[0.85rem] leading-[0.875rem] tracking-widest shadow-[inset_0px_-6px_0px] shadow-pink-light transition-all duration-[400ms] ease-out hover:shadow-[inset_0px_-15px_0px] hover:shadow-pink-light"
+          >
+            {isSubmitting ? (
+              <>
+                En cours...
+                <FontAwesomeIcon icon={faSpinner} spin className="mr-2" />
+              </>
+            ) : (
+              "Envoyer"
+            )}
           </motion.button>
+
         </form>
 
         <div className='w-full lg:w-2/5  bg-gray-100 px-4 py-8 md:p-10 rounded-lg border border-gray-100 shadow-md mt-16 lg:mt-10 mb-5'>
