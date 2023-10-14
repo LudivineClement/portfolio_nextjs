@@ -34,7 +34,6 @@ const ProjectCard = ({ img, title, github, url, ToggleProjectInfo, id }) => {
   };
   return (
     <motion.div
-      onClick={handleClick}
       variants={animationProject}
       initial="initial"
       whileInView="animate"
@@ -48,7 +47,7 @@ const ProjectCard = ({ img, title, github, url, ToggleProjectInfo, id }) => {
         onClick={handleClick}
         className='w-full h-full object-cover lg:grayscale transition-transform duration-[400ms] ease-out group-hover:lg:scale-105 group-hover:lg:grayscale-0'
       />
-      <div onClick={handleClickMobile} className='absolute w-full flex flex-col items-center justify-center lg:justify-normal overflow-hidden bg-pink-global h-0 z-10 lg:cursor-default -bottom-5 p-4 group-hover:lg:h-[100px] group-hover:h-full group-hover:opacity-80 group-hover:bottom-0 transition-bottom duration-500 ease-in-out opacity-90'>
+      <div onClick={handleClickMobile} className='absolute w-full flex flex-col items-center justify-center lg:justify-normal overflow-hidden bg-pink-global h-0 z-10 lg:cursor-default  -bottom-5 p-4 group-hover:lg:h-[100px] group-hover:h-full group-hover:opacity-80 group-hover:bottom-0 transition-bottom duration-500 ease-in-out opacity-90'>
 
         <h3 className=' text-3xl lg:text-[1.7rem] opacity-100 text-black font-kaushan font-semibold'>{title}</h3>
 
