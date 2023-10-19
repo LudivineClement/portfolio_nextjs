@@ -58,7 +58,7 @@ const Header = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: false }}
           >
-            <Link href="https://fr.linkedin.com/" target="_blank" title='Linkedin'>
+            <Link href="https://www.linkedin.com/in/ludivine-cl%C3%A9ment-45612326a/" target="_blank" title='Linkedin'>
               <Image
                 src="/img/icons/icon-linkedin.png"
                 alt="icône de Linkedin"

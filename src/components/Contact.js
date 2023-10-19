@@ -55,7 +55,7 @@ const Contact = () => {
         toast.success('Votre message a été envoyé avec succès !');
       } else {
         console.error('Une erreur s\'est produite lors de l\'envoi du formulaire :', error);
-        console.error('Une erreur s\'est produite lors de l\'envoi du formulaire.');
+        toast.error('Une erreur s\'est produite lors de l\'envoi du formulaire.');
       }
     } catch (error) {
       toast.error('Une erreur s\'est produite lors de l\'envoi du formulaire.');
@@ -189,7 +189,7 @@ const Contact = () => {
             {isSubmitting ? (
               <>
                 En cours...
-                <FontAwesomeIcon icon={faSpinner} spin className="mr-2" />
+                <FontAwesomeIcon icon={faSpinner} spin className="ml-2" />
               </>
             ) : (
               "Envoyer"

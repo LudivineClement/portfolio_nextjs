@@ -20,7 +20,7 @@ const SectionCTA = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7, delay: 0.3 }}
       >
-        <Link href="#" className='text-gray-dark text-sm md:text-base uppercase font-medium py-2 px-3 md:px-4 group bg-pink-global tracking-wider rounded border-2 border-solid  border-transparent transition-all duration-300 ease-in hover:text-pink-global hover:bg-black hover:border-2 hover:border-solid hover:border-pink-global '> Voir mon CV <span><FontAwesomeIcon icon={faCircleChevronRight} className='fa-circle-chevron-right mt-1 md:mt-0 ml-1 transition-all duration-300 ease-in translate-x-0 group-hover:translate-x-1' /></span></Link>
+        <Link href="./cv-ludivine-clément.pdf" download target='blank' className='text-gray-dark text-sm md:text-base uppercase font-medium py-2 px-3 md:px-4 group bg-pink-global tracking-wider rounded border-2 border-solid  border-transparent transition-all duration-300 ease-in hover:text-pink-global hover:bg-black hover:border-2 hover:border-solid hover:border-pink-global '> Voir mon CV <span><FontAwesomeIcon icon={faCircleChevronRight} className='fa-circle-chevron-right mt-1 md:mt-0 ml-1 transition-all duration-300 ease-in translate-x-0 group-hover:translate-x-1' /></span></Link>
       </motion.div>
 
     </section>
