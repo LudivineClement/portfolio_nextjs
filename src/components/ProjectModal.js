@@ -5,7 +5,6 @@ import { faUpRightFromSquare} from "@fortawesome/free-solid-svg-icons";
 import { AiOutlineClose } from 'react-icons/ai';
 
 const ProjectModal = ({ data, isOpen, setIsOpen }) => {
-
   const handleClose = () => {
     setIsOpen(false);
   };  

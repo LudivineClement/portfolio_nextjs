@@ -48,7 +48,7 @@ const Project = () => {
             title={data.title}
             github={data.github}
             url={data.website}
-            ToggleProjectInfo={() => handleProjectSelect(data)}
+            onClick={() => handleProjectSelect(data)}
             id={id}
           />
         ))}
