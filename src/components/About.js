@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import Link from 'next/link';
 import { motion } from "framer-motion"
 
 const About = () => {
@@ -59,7 +58,7 @@ const About = () => {
             transition={{ duration: 0.7, delay: 0.5 }}
             viewport={{ once: true }}
           >
-            <Link href="#contact" className='inline-block mt-9 uppercase font-medium pl-[2px] text-[0.9rem] leading-[0.875rem] tracking-widest shadow-[inset_0px_-6px_0px] shadow-pink-light transition-all duration-[400ms] ease-out hover:shadow-[inset_0px_-15px_0px] hover:shadow-pink-light '>Me contacter</Link>
+            <a href="#contact" className='inline-block mt-9 uppercase font-medium pl-[2px] text-[0.9rem] leading-[0.875rem] tracking-widest shadow-[inset_0px_-6px_0px] shadow-pink-light transition-all duration-[400ms] ease-out hover:shadow-[inset_0px_-15px_0px] hover:shadow-pink-light '>Me contacter</a>
           </motion.div>
 
         </div>

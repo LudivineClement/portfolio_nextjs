@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { RiMenu3Fill } from 'react-icons/ri';
@@ -83,7 +82,7 @@ const Navbar = () => {
   return (
     <nav className={`fixed w-screen top-0 left-0 z-[100] transition-all duration-700 ease-out ${isScrolled || open ? 'bg-off-white shadow-2xl ' : 'bg-transparent shadow-none'}`}>
       <div className=" lg:flex lg:justify-between lg:items-center lg:py-6 lg:px-9 lg:mx-20  ">
-        <Link href="#home" className={`font-kaushan text-[2rem] inline-block font-semibold my-4 ml-4 lg:my-0 lg:ml-0 ${isScrolled || open ? 'text-gray-dark' : 'text-off-white'}`}>Portfolio</Link>
+        <a href="#home" className={`font-kaushan text-[2rem] inline-block font-semibold my-4 ml-4 lg:my-0 lg:ml-0 ${isScrolled || open ? 'text-gray-dark' : 'text-off-white'}`}>Portfolio</a>
 
         <div
         onClick={() => setOpen(!open)}
@@ -106,18 +105,18 @@ const Navbar = () => {
                 key={menuItem.section}
                 className={`${styleLink} `}
               >
-                <Link href={`#${menuItem.section}`} style={isDesktop && activeSection === menuItem.section ? activeStyle : {}}>
+                <a href={`#${menuItem.section}`} style={isDesktop && activeSection === menuItem.section ? activeStyle : {}}>
                   {menuItem.text}
-                </Link>
+                </a>
               </li>
             ))}
             <li>
-              <Link href='#contact' title='contact' className='hidden lg:inline-block'>
+              <a href='#contact' title='contact' className='hidden lg:inline-block'>
                 <FontAwesomeIcon icon={faEnvelope} style={isDesktop && activeSection === 'contact' ? activeContact : {}} className='text-[1.2rem] text-gray-dark pb-1 hover:text-pink-global transition-all duration-[400ms] ease-out' />
-              </Link>
+              </a>
             </li>
             <li className={`${styleLink} lg:hidden `}>
-              <Link href='#contact' className=' inline-block mb-4 lg:mb-0' style={isDesktop && activeSection === 'contact' ? activeStyle : {}}>Contact</Link>
+              <a href='#contact' className=' inline-block mb-4 lg:mb-0' style={isDesktop && activeSection === 'contact' ? activeStyle : {}}>Contact</a>
             </li>
           </ul>
       </div>

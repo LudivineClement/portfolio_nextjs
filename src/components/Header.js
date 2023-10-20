@@ -1,11 +1,11 @@
 'use client'
 import React from 'react';
 import Navbar from './Navbar';
-import Image from 'next/image';
-import Link from 'next/link';
 import TypeWriter from './TypeWriter';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { RiFilePdf2Fill } from 'react-icons/ri';
+import { BiLogoGithub, BiLogoLinkedin, BiLogoGmail } from 'react-icons/bi';
 import { motion } from "framer-motion"
 
 
@@ -16,7 +16,7 @@ const Header = () => {
       <div className="text-off-white absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-center">
         <TypeWriter />
         <div
-          className=" flex gap-6 justify-center">
+          className=" flex gap-5 justify-center items-center">
 
           <motion.div
             initial={{ opacity: 0, y: 80 }}
@@ -24,32 +24,10 @@ const Header = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: false }}
           >
-            <Link href="https://github.com/LudivineClement?tab=repositories" target="_blank" title='Github'>
-              <Image
-                src="/img/icons/icon-github.png"
-                alt="icône de github"
-                width={20}
-                height={20}
-                className='hover:brightness-75 transition-all duration-300 ease-in-out'
+            <a href="https://github.com/LudivineClement?tab=repositories" target="_blank" title='Github'>
+              <BiLogoGithub className='hover:brightness-75 transition-all duration-300 ease-in-out w-6 h-6'
               />
-            </Link>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 80 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: false }}
-          >
-            <Link href="https://www.instagram.com/" target="_blank" title='Instagram'>
-              <Image
-                src="/img/icons/icon-instagram.png"
-                alt="icône d'instagram'"
-                width={20}
-                height={20}
-                className='hover:brightness-75 transition-all duration-300 ease-in-out'
-              />
-            </Link>
+            </a>
           </motion.div>
 
           <motion.div
@@ -58,16 +36,11 @@ const Header = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: false }}
           >
-            <Link href="https://www.linkedin.com/in/ludivine-cl%C3%A9ment-45612326a/" target="_blank" title='Linkedin'>
-              <Image
-                src="/img/icons/icon-linkedin.png"
-                alt="icône de Linkedin"
-                width={20}
-                height={20}
-                className='hover:brightness-75 transition-all duration-300 ease-in-out'
+            <a href="https://www.linkedin.com/in/ludivine-cl%C3%A9ment-45612326a/" target="_blank" title='Linkedin'>
+              <BiLogoLinkedin className='hover:brightness-75 transition-all duration-300 ease-in-out w-6 h-6'
               />
-            </Link>
-          </motion.div>
+            </a>
+          </motion.div>                 
 
           <motion.div
             initial={{ opacity: 0, y: 80 }}
@@ -75,22 +48,29 @@ const Header = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: false }}
           >
-            <Link href="https://twitter.com/?lang=fr" target="_blank" title='Twitter X'>
-              <Image
-                src="/img/icons/icon-twitterx.png"
-                alt="icône de Twitter"
-                width={20}
-                height={20}
-                className='hover:brightness-75 transition-all duration-300 ease-in-out'
+            <a href='mailto:ludivine.clement0985@gmail.com' target='blank' title='Gmail'>
+              <BiLogoGmail className='hover:brightness-75 transition-all duration-300 ease-in-out w-6 h-6 mt-[2px]'
               />
-            </Link>
+            </a>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: false }}
+          >
+            <a href="/cv-ludivine-clement.pdf" target="_blank" rel="noopener noreferrer" title='Voir le CV'>
+              <RiFilePdf2Fill className='hover:brightness-75 transition-all duration-300 ease-in-out w-6 h-6'
+              />
+            </a>
           </motion.div>
         </div>
       </div>
       <div className='absolute left-1/2 translate-x-[-50%] bottom-12 '>
-        <Link href="#about">
+        <a href="#about">
           <FontAwesomeIcon icon={faChevronDown} bounce className='text-off-white text-3xl' />
-        </Link>
+        </a>
       </div>
     </header>
   );

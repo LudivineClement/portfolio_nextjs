@@ -1,81 +1,60 @@
 'use client'
 
 import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import { RiFilePdf2Fill } from 'react-icons/ri';
+import { BiLogoGithub, BiLogoLinkedin, BiLogoGmail } from 'react-icons/bi';
 import { motion } from "framer-motion"
 
 
 const Footer = () => {
   return (
     <footer className='bg-bg-black bg-center bg-cover p-8 mt-40'>
-      <div className=" flex gap-9 justify-center ">
+      <div className=" flex gap-9 justify-center items-center ">
         <motion.div
           initial={{ opacity: 0, y: -80 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: false }}
         >
-          <Link href="https://github.com/LudivineClement?tab=repositories" target="_blank">
-            <Image
-              src="/img/icons/icon-github.png"
-              alt="icône de github"
-              width={25}
-              height={25}
-              className='hover:brightness-75 transition-all duration-300 ease-in-out'
-            />
-          </Link>
+          <a href="https://github.com/LudivineClement?tab=repositories" target="_blank">
+            <BiLogoGithub className='text-off-white  hover:brightness-75 transition-all duration-300 ease-in-out w-7 h-7' />
+          </a>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: -80 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay:0.2 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: false }}
         >
-          <Link href="https://www.instagram.com/" target="_blank">
-            <Image
-              src="/img/icons/icon-instagram.png"
-              alt="icône d'instagram'"
-              width={25}
-              height={25}
-              className='hover:brightness-75 transition-all duration-300 ease-in-out'
+          <a href="https://www.linkedin.com/in/ludivine-cl%C3%A9ment-45612326a/" target="_blank" title='Linkedin'>
+            <BiLogoLinkedin className='text-off-white hover:brightness-75 transition-all duration-300 ease-in-out w-7 h-7'
             />
-          </Link>
+          </a>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: -80 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay:0.3 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
           viewport={{ once: false }}
         >
-          <Link href="https://www.linkedin.com/in/ludivine-cl%C3%A9ment-45612326a/" target="_blank">
-            <Image
-              src="/img/icons/icon-linkedin.png"
-              alt="icône de Linkedin"
-              width={25}
-              height={25}
-              className='hover:brightness-75 transition-all duration-300 ease-in-out'
+          <a href='mailto:ludivine.clement0985@gmail.com' target='blank' title='Gmail'>
+            <BiLogoGmail className='text-off-white hover:brightness-75 transition-all duration-300 ease-in-out w-7 h-7 mt-[2px]'
             />
-          </Link>
+          </a>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: -80 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay:0.4 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
           viewport={{ once: false }}
         >
-          <Link href="https://twitter.com/?lang=fr" target="_blank">
-            <Image
-              src="/img/icons/icon-twitterx.png"
-              alt="icône de Twitter"
-              width={25}
-              height={25}
-              className='hover:brightness-75 transition-all duration-300 ease-in-out'
+          <a href="/cv-ludivine-clement.pdf" target="_blank" rel="noopener noreferrer" title='Voir le CV'>
+            <RiFilePdf2Fill className='text-off-white hover:brightness-75 transition-all duration-300 ease-in-out w-7 h-7'
             />
-          </Link>
+          </a>
         </motion.div>
 
       </div>
