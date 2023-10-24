@@ -82,7 +82,28 @@
   "tags": ["Optimisation web", "SEO", "Référencement local", "Rich Snippet", "Wave","Lighthouse", "Accessibilité"],
   "img_cover": "img/mockup/mockup-nina.webp",
   "img_info": "img/banner/banner-nina.jpg"
+},
+
+{
+  "id": "8",
+  "title": "724events",
+  "client": "L'agence évènementielle 724events.",
+  "presentation": "724events, une agence événementielle, avait lancé une refonte cruciale de son site vitrine. Après la validation du design, un développeur freelance a été recruté pour l'intégration, mais il a dû quitter le projet en cours. J'ai relevé le défi de résoudre les problèmes techniques et d'optimiser le site pour répondre pleinement aux besoins de l'agence.",
+  "overview": "Ma mission a été d'effectuer un débogage complet et d'optimiser le site web de 724events. J'ai commencé par une analyse approfondie du code source existant, identifiant ainsi les problèmes techniques qui entravaient les performances du site. Mon objectif était de garantir que le site soit fluide et réactif pour les visiteurs. Pour atteindre cet objectif, j'ai utilisé des tests unitaires pour vérifier chaque composant du site. Les React Dev Tools ont été essentielles pour analyser et optimiser le code React. Grâce à ces outils, j'ai pu cibler les zones spécifiques nécessitant des améliorations. En parallèle, j'ai finalisé le cahier de recette, créant des scénarios détaillés pour vérifier que chaque fonctionnalité du site fonctionnait comme prévu. Cela incluait des tests de navigation, de formulaire, de performance, et bien d'autres. Mon travail a permis d'assurer que le site réponde aux normes de qualité les plus élevées, offrant ainsi une expérience optimale aux utilisateurs.",
+  "github": "https://github.com/LudivineClement/724Events",
+  "tags": ["Débogage", "Optimisation", "Tests Unitaires", "React Dev Tools"],
+  "img_cover": "img/mockup/mockup-724.webp",
+  "img_info": "img/banner/banner-77events.png"
+},
+
+{
+  "id": "9",
+  "title": "Menu Maker",
+  "client": "Startup de restauration.",
+  "presentation": "OhMyFood est une startup de restauration qui souhaite développer un site répertoriant les menus de restaurants gastronomiques. Mon rôle en tant que développeuse était de créer le site en respectant les maquettes fournies par l'équipe UX designer.",
+  "overview": "Le projet a été conçu en adoptant une approche 'mobile first', ce qui signifie que j'ai priorisé l'optimisation de l'expérience utilisateur sur les appareils mobiles. Cette stratégie garantit que les utilisateurs bénéficient d'une expérience fluide et réactive, quel que soit l'appareil qu'ils utilisent, allant des smartphones aux ordinateurs de bureau. De plus, pour rendre le site encore plus attrayant, j'ai intégré des animations fluides et naturelles. Ces animations ont été soigneusement créées pour améliorer l'interactivité du site, offrant ainsi aux visiteurs une expérience engageante et immersive.",
+  "tags": ["HTML5", "CSS3", "Responsive Web Design", "Animations"],
+  "img_cover": "img/mockup/mockup-qwenta.jpg",
+  "img_info": "img/banner/banner-qwenta.png"
 }
-
-
 ]
