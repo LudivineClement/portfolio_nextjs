@@ -6,7 +6,7 @@ import { BsGithub } from 'react-icons/bs';
 import { motion } from "framer-motion";
 
 const ProjectCard = ({ img, title, github, url, onClick, id }) => {
-  
+
   const animationProject = {
     initial: {
       opacity: 0,
@@ -54,7 +54,11 @@ const ProjectCard = ({ img, title, github, url, onClick, id }) => {
         <div className='flex justify-center m-3 items-center'>
           <div title='Voir plus' onClick={onClick}><FontAwesomeIcon icon={faCirclePlus} className='text-black text-4xl lg:text-base mx-2 lg:mx-[5px] mt-[15px] lg:mt-0 transition-transform duration-200 opacity-100 ease-in hover:scale-125 cursor-pointer' /></div>
 
-          <a href={github} title='Lien Github' target="_blank" className='text-black text-lg lg:text-base mx-2 lg:mx-[5px] mb-1 lg:mb-[2px] transition-transform duration-200 opacity-100 ease-in hover:scale-125 hidden lg:block'><BsGithub /></a>
+          {github && (
+            <a href={github} title='Lien Github' target="_blank" className='text-black text-lg lg:text-base mx-2 lg:mx-[5px] mb-1 lg:mb-[2px] transition-transform duration-200 opacity-100 ease-in hover:scale-125 hidden lg:block'>
+              <BsGithub />
+            </a>
+          )}
           {url ? (
             <a href={url} title='Lien du site' target="_blank" className='hidden lg:block'><FontAwesomeIcon icon={faLink} className='text-black text-lg lg:text-base mx-2 lg:mx-[5px] opacity-100 transition-transform duration-200 ease-in hover:scale-125 ' /></a>
           ) : null}

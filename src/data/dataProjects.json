@@ -69,6 +69,19 @@
   "tags": ["HTML5", "CSS3", "Responsive Web Design", "Animations"],
   "img_cover": "img/mockup/mockup_ohmyfood_small.webp",
   "img_info": "img/banner/banner_ohmyfood.png"
+},
+
+{
+  "id": "7",
+  "title": "Nina Carducci",
+  "client": "Nina Carducci, phototgraphe professionnelle",
+  "presentation": "Nina Carducci est le site web d'une photographe professionnelle spécialisée dans les portraits et la photographie événementielle. Le site a pour but de présenter le portfolio de la photographe et de mettre en valeur ses réalisations.",
+  "overview": "Le projet visait à améliorer la performance globale du site, réduire le temps de chargement, et renforcer son référencement sur les moteurs de recherche. Mon intervention a inclus l'optimisation des images, la refonte du code et de la structure du site, la mise en place du référencement local avec Schema.org, et l'ajout des métas pour les réseaux sociaux. De plus, j'ai réalisé une optimisation du SEO du site, intégré le Rich Snippet pour une meilleure visibilité sur les moteurs de recherche, et effectué une analyse approfondie avec Wave pour garantir des performances optimales. Ces améliorations ont abouti à une expérience utilisateur plus fluide, une meilleure visibilité en ligne, et la possibilité d'attirer de nouveaux clients, notamment grâce à l'optimisation de Wave pour une meilleure accessibilité.",
+  "github": "https://github.com/LudivineClement/Nina-Carducci",
+  "website": "https://ludivineclement.github.io/Nina-Carducci/",
+  "tags": ["Optimisation web", "SEO", "Référencement local", "Rich Snippet", "Wave","Lighthouse", "Accessibilité"],
+  "img_cover": "img/mockup/mockup-nina.webp",
+  "img_info": "img/banner/banner-nina.jpg"
 }
 
 
