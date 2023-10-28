@@ -14,8 +14,8 @@ const Skills = () => {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 0.7,
-        delay: 0.2 * id,
+        duration: 0.3,
+        delay: 0.1 * id,
       },
     })
   }
@@ -66,7 +66,7 @@ const Skills = () => {
             className="pb-0 md:pb-5 lg:pb-5 text-gray-global md:border-b md:border-solid md:border-gray-dark"
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
+            transition={{ duration: 1, delay: 0.4 }}
             viewport={{ once: true }}
           >
             <li className='mb-1 md:mb-0'>▸ Référencement SEO</li>
@@ -77,7 +77,7 @@ const Skills = () => {
             className="pt-0 md:pt-5 text-gray-global"
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.8 }}
+            transition={{ duration: 1, delay: 0.5 }}
             viewport={{ once: true }}
           >
             <li>▸ Rigueur</li>

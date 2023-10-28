@@ -77,7 +77,7 @@ const Contact = () => {
                 className="input_container relative mb-16 lg:mb-[60px]"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7 }}
+                transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
               >
                 <input
@@ -97,7 +97,7 @@ const Contact = () => {
                 className="input_container relative mb-16 lg:mb-[60px]"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7 }}
+                transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
               >
                 <input
@@ -119,7 +119,7 @@ const Contact = () => {
                 className="input_container relative mb-16 lg:mb-[60px]"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7 }}
+                transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
               >
                 <input
@@ -139,7 +139,7 @@ const Contact = () => {
                 className="input_container relative mb-16 lg:mb-[60px]"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7 }}
+                transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
               >
                 <input
@@ -161,7 +161,7 @@ const Contact = () => {
             className="input_container relative "
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
+            transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
             <textarea
@@ -181,7 +181,7 @@ const Contact = () => {
           <motion.button
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
             type="submit"
             className="block uppercase font-medium pl-[2px] text-[0.940rem] lg:text-[0.85rem] leading-[0.875rem] tracking-widest shadow-[inset_0px_-6px_0px] shadow-pink-light transition-all duration-[400ms] ease-out hover:shadow-[inset_0px_-15px_0px] hover:shadow-pink-light"
@@ -212,7 +212,7 @@ const Contact = () => {
             className='flex items-center gap-4 mt-8 group'
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
+            transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
             <a href='mailto:ludivine.clement0985@gmail.com' target='blank' className='p-3 text-xl inline-block lg:text-3xl bg-gray-200 transition-colors duration-500 group-hover:text-off-white group-hover:bg-pink-global'><BsEnvelopeAtFill /></a>
@@ -228,7 +228,7 @@ const Contact = () => {
             className='flex items-center gap-4 mt-8 group'
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             viewport={{ once: true }}
           >
             <a href='tel:0768615727' className='p-3 text-xl inline-block lg:text-3xl bg-gray-200 transition-colors duration-500 group-hover:text-off-white group-hover:bg-pink-global'><FaPhoneVolume /></a>
@@ -244,7 +244,7 @@ const Contact = () => {
             className='flex items-center gap-4 mt-8 group'
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.8 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
             viewport={{ once: true }}
           >
             <a href='https://www.google.com/maps?q=Nogent+le+Rotrou,+Eure+et+Loir' target='blank' className='p-3 text-xl inline-block lg:text-3xl bg-gray-200 transition-colors duration-500 group-hover:text-off-white group-hover:bg-pink-global'> <ImLocation2 /></a>

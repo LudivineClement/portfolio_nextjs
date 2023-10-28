@@ -7,13 +7,13 @@ const TypeWriter = () => {
       <TypeAnimation
         sequence={[
           "Développeuse",
-          1500,
+          1200,
           "Codeuse",
-          1500,
+          1200,
           "Passionnée",
-          1500,
+          1200,
           "Créative",
-          1500,
+          1200,
         ]}
         speed={30}
         repeat={Infinity}

@@ -12,7 +12,7 @@ const About = () => {
           className='h-[500px] rounded-[3px] m-auto md:m-0 object-cover'
           initial={{ opacity: 0, y: 150 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         />
         <div className="content-about">
@@ -20,7 +20,7 @@ const About = () => {
             className='font-kaushan text-[2.3rem] md:text-[2rem] lg:text-[2.5rem] pt-12 pb-3 md:pt-3 md:pb-3'
             initial={{ opacity: 0, y: 150 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >Moi c&apos;est Ludivine, <br />
             développeuse web passionnée.
@@ -29,7 +29,7 @@ const About = () => {
           <motion.div
             initial={{ opacity: 0, y: 150 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
           >
             <p className='pt-3 text-sm lg:text-[0.95rem] text-gray-light leading-6'>
@@ -55,7 +55,7 @@ const About = () => {
           <motion.div
             initial={{ opacity: 0, y: 80 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             viewport={{ once: true }}
           >
             <a href="#contact" className='inline-block mt-9 uppercase font-medium pl-[2px] text-[0.9rem] leading-[0.875rem] tracking-widest shadow-[inset_0px_-6px_0px] shadow-pink-light transition-all duration-[400ms] ease-out hover:shadow-[inset_0px_-15px_0px] hover:shadow-pink-light '>Me contacter</a>

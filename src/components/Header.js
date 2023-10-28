@@ -21,7 +21,7 @@ const Header = () => {
           <motion.div
             initial={{ opacity: 0, y: 80 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.5 }}
             viewport={{ once: false }}
           >
             <a href="https://github.com/LudivineClement?tab=repositories" target="_blank" title='Github'>
@@ -33,7 +33,7 @@ const Header = () => {
           <motion.div
             initial={{ opacity: 0, y: 80 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: false }}
           >
             <a href="https://www.linkedin.com/in/ludivine-cl%C3%A9ment-45612326a/" target="_blank" title='Linkedin'>
@@ -45,7 +45,7 @@ const Header = () => {
           <motion.div
             initial={{ opacity: 0, y: 80 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: false }}
           >
             <a href='mailto:ludivine.clement0985@gmail.com' target='blank' title='Gmail'>
@@ -57,7 +57,7 @@ const Header = () => {
           <motion.div
             initial={{ opacity: 0, y: 80 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: false }}
           >
             <a href="/cv-ludivine-clement.pdf" target="_blank" rel="noopener noreferrer" title='Voir le CV'>
