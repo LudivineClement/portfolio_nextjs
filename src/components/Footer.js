@@ -16,7 +16,7 @@ const Footer = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: false }}
         >
-          <a href="https://github.com/LudivineClement?tab=repositories" target="_blank">
+          <a href="https://github.com/LudivineClement" target="_blank">
             <BiLogoGithub className='text-off-white  hover:brightness-75 transition-all duration-300 ease-in-out w-7 h-7' />
           </a>
         </motion.div>
@@ -27,7 +27,7 @@ const Footer = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: false }}
         >
-          <a href="https://www.linkedin.com/in/ludivine-cl%C3%A9ment-45612326a/" target="_blank" title='Linkedin'>
+          <a href="https://www.linkedin.com/in/ludivine-cl%C3%A9ment-d%C3%A9veloppeuse-web/" target="_blank" title='Linkedin'>
             <BiLogoLinkedin className='text-off-white hover:brightness-75 transition-all duration-300 ease-in-out w-7 h-7'
             />
           </a>
