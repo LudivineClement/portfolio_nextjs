@@ -44,7 +44,7 @@ const Skills = () => {
                   <div className="absolute w-full h-full [backface-visibility:hidden]">
                     <Image
                       src={data.img}
-                      alt="icône de github"
+                      alt={`icône de ${data.title}`}
                       width={70}
                       height={70}
                       className='rounded-[50%]'

@@ -199,61 +199,77 @@ const Contact = () => {
         </form>
 
         <div className='w-full lg:w-2/5  bg-gray-100 px-4 py-8 md:p-10 rounded-lg border border-gray-100 shadow-md mt-16 lg:mt-10 mb-5'>
-          <motion.h4
+          <motion.h3
             className='text-gray-dark text-lg font-medium mb-4'
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >Coordonnées <span className='text-pink-global'>de Contact</span>
-          </motion.h4>
+          </motion.h3>
 
           <motion.div
-            className='flex items-center gap-4 mt-8 group'
+            className=' mt-8 group'
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <a href='mailto:ludivine.clement0985@gmail.com' target='blank' className='p-3 text-xl inline-block lg:text-3xl bg-gray-200 transition-colors duration-500 group-hover:text-off-white group-hover:bg-pink-global'><BsEnvelopeAtFill /></a>
-            <div >
-              <p className='text-sm md:text-base'>Envoyer un email</p>
-              <a href='mailto:ludivine.clement0985@gmail.com' target='blank' className='text-pink-global break-all text-sm transition-colors duration-500 group-hover:text-pink-light'>ludivine.clement0985@gmail.com</a>
-            </div>
+            <a href='mailto:ludivine.clement0985@gmail.com' target='blank' title='Email' className='flex items-center gap-4'>
+              <div className='p-3 text-xl inline-block lg:text-3xl bg-gray-200 transition-colors duration-500 group-hover:text-off-white group-hover:bg-pink-global'>
+                <BsEnvelopeAtFill />
+              </div>
+              <div >
+                <p className='text-sm md:text-base'>Envoyer un email</p>
+                <p className='text-pink-global break-all text-sm transition-colors duration-500 group-hover:text-pink-light'>ludivine.clement0985@gmail.com</p>
+              </div>
+            </a>
+
           </motion.div>
 
           <hr className='color-gray my-8' />
 
           <motion.div
-            className='flex items-center gap-4 mt-8 group'
+            className=' mt-8 group'
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
             viewport={{ once: true }}
           >
-            <a href='tel:0768615727' className='p-3 text-xl inline-block lg:text-3xl bg-gray-200 transition-colors duration-500 group-hover:text-off-white group-hover:bg-pink-global'><FaPhoneVolume /></a>
-            <div >
-              <p className='text-sm md:text-base'>Numéro de téléphone</p>
-              <a href='tel:0768615727' className='text-pink-global text-sm transition-colors duration-200 group-hover:text-pink-light'>Contacter par téléphone</a>
-            </div>
+
+            <a href='tel:0768615727' title='Téléphone' target='blank' className='flex items-center gap-4'>
+              <div className='p-3 text-xl inline-block lg:text-3xl bg-gray-200 transition-colors duration-500 group-hover:text-off-white group-hover:bg-pink-global'>
+                <FaPhoneVolume />
+              </div>
+              <div >
+                <p className='text-sm md:text-base'>Numéro de téléphone</p>
+                <p className='text-pink-global text-sm transition-colors duration-200 group-hover:text-pink-light'>Contacter par téléphone</p>
+              </div>
+            </a>
+
           </motion.div>
 
           <hr className='color-gray my-8' />
 
           <motion.div
-            className='flex items-center gap-4 mt-8 group'
+            className='mt-8 group'
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
             viewport={{ once: true }}
           >
-            <a href='https://www.google.com/maps?q=Nogent+le+Rotrou,+Eure+et+Loir' target='blank' className='p-3 text-xl inline-block lg:text-3xl bg-gray-200 transition-colors duration-500 group-hover:text-off-white group-hover:bg-pink-global'> <ImLocation2 /></a>
-            <div>
-              <p className='text-base'>Localisation</p>
-              <a href='https://www.google.com/maps?q=Nogent+le+Rotrou,+Eure+et+Loir' className='text-pink-global text-sm transition-colors duration-200 group-hover:text-pink-light' target='_blank'>
-                Nogent le Rotrou, Eure et Loir
-              </a>
-            </div>
+            <a href='https://www.google.com/maps?q=Nogent+le+Rotrou,+Eure+et+Loir' target='blank' title='Localisation' className='flex items-center gap-4' >
+              <div className='p-3 text-xl inline-block lg:text-3xl bg-gray-200 transition-colors duration-500 group-hover:text-off-white group-hover:bg-pink-global'>
+                <ImLocation2 />
+              </div>
+              <div>
+                <p className='text-base'>Localisation</p>
+                <p className='text-pink-global text-sm transition-colors duration-200 group-hover:text-pink-light' target='_blank'>
+                  Nogent le Rotrou, Eure et Loir
+                </p>
+              </div>
+            </a>
+
           </motion.div>
         </div>
       </div>

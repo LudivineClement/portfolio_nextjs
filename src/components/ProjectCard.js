@@ -43,7 +43,7 @@ const ProjectCard = ({ img, title, github, url, onClick, id }) => {
     >
       <img
         src={img}
-        alt={title}
+        alt=""
         onClick={handleClick}
         className='w-full h-full object-cover lg:grayscale transition-transform duration-[400ms] ease-out group-hover:lg:scale-105 group-hover:lg:grayscale-0'
       />

@@ -60,7 +60,7 @@ const Header = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: false }}
           >
-            <a href="/cv-ludivine-clement.pdf" target="_blank" rel="noopener noreferrer" title='Voir le CV'>
+            <a href="/cv-ludivine-clement.pdf" target="_blank" rel="noopener noreferrer" title='Voir le CV pdf'>
               <RiFilePdf2Fill className='hover:brightness-75 transition-all duration-300 ease-in-out w-6 h-6'
               />
             </a>
@@ -68,7 +68,7 @@ const Header = () => {
         </div>
       </div>
       <div className='absolute left-1/2 translate-x-[-50%] bottom-12 '>
-        <a href="#about">
+        <a href="#about" title='Voir plus'>
           <FontAwesomeIcon icon={faChevronDown} bounce className='text-off-white text-3xl' />
         </a>
       </div>
