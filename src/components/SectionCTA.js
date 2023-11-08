@@ -21,7 +21,7 @@ const SectionCTA = () => {
       >
         <a href="/cv-ludivine-clement.pdf" target="_blank" rel="noopener noreferrer"
           className="text-gray-dark text-sm md:text-base uppercase font-medium py-2 px-3 md:px-4 group bg-pink-global tracking-wider rounded border-2 border-solid border-transparent transition-all duration-300 ease-in hover:text-pink-global hover:bg-black hover:border-2 hover:border-solid hover:border-pink-global">
-          Téléchargez mon CV (PDF) <span><FontAwesomeIcon icon={faCircleChevronRight} className="fa-circle-chevron-right mt-1 md:mt-0 ml-1 transition-all duration-300 ease-in translate-x-0 group-hover:translate-x-1" /></span>
+          Voir mon CV (PDF) <span><FontAwesomeIcon icon={faCircleChevronRight} className="fa-circle-chevron-right mt-1 md:mt-0 ml-1 transition-all duration-300 ease-in translate-x-0 group-hover:translate-x-1" /></span>
         </a>
         <p className="sr-only">Téléchargez mon CV au format PDF en cliquant sur ce lien.</p>
       </motion.div>
