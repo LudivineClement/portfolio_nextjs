@@ -32,11 +32,12 @@ export const metadata = {
       { url: 'img/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ],
   },
+  metadataBase: new URL('https://www.ludivine-clement.dev'),
   openGraph: {
     title: 'Ludivine CLEMENT | Portfolio - développeuse web front-end',
     description: 'Je suis Ludivine CLEMENT, développeuse web front-end freelance passionnée par la création web. Expertise en HTML, CSS, Javascript, React et responsive design.',
     url: 'https://www.ludivine-clement.dev/',
-    siteName: 'Portfolio de Ludivine Clément',
+    siteName: 'Portfolio Ludivine Clément, développeuse web',
     images: [
       {
         url: '/img/img-main-rs.png',
@@ -47,12 +48,23 @@ export const metadata = {
         url: '/img/img-main-rs.png',
         width: 1800,
         height: 1600,
-        alt: 'Portfolio Ludivine Clément',
+        alt: 'Portfolio Ludivine Clément, développeuse web',
       },
     ],
     locale: 'fr_FR',
     type: 'website',
   },
+  twitter: {
+    handle: '@ludev28',
+    site: '@ludev28',
+    cardType: 'summary_large_image',
+    image: {
+      url: '/img/img-main-rs.png',
+      width: 1200,
+      height: 630,
+      alt: 'Portfolio Ludivine Clément, développeuse web',
+    },
+  }
 }
 
 export default function RootLayout({ children }) {
