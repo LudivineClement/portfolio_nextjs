@@ -32,10 +32,31 @@ export const metadata = {
       { url: 'img/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ],
   },
+  openGraph: {
+    title: 'Ludivine CLEMENT | Portfolio - développeuse web front-end',
+    description: 'Je suis Ludivine CLEMENT, développeuse web front-end freelance passionnée par la création web. Expertise en HTML, CSS, Javascript, React et responsive design.',
+    url: 'https://www.ludivine-clement.dev/',
+    siteName: 'Portfolio de Ludivine Clément',
+    images: [
+      {
+        url: '/img/img-main-rs.png',
+        width: 800,
+        height: 600,
+      },
+      {
+        url: '/img/img-main-rs.png',
+        width: 1800,
+        height: 1600,
+        alt: 'Portfolio Ludivine Clément',
+      },
+    ],
+    locale: 'fr_FR',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({ children }) {
-  
+
   return (
     <html lang="fr" className='scroll-smooth'>
       <head>
