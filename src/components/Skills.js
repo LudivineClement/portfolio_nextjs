@@ -45,13 +45,13 @@ const Skills = () => {
                     <Image
                       src={data.img}
                       alt={`icône de ${data.title}`}
-                      width={70}
-                      height={70}
+                      width={75}
+                      height={75}
                       className='rounded-[50%]'
                     />
                   </div>
-                  <div className="absolute w-full h-full rounded-[50%] -top-px bg-black flex justify-center items-center [backface-visibility:hidden] [transform:rotateY(180deg)] ">
-                    <p className='uppercase font-extralight'>{data.title}</p>
+                  <div className="absolute w-full h-full rounded-[50%] -top-px bg-black flex justify-center items-center [backface-visibility:hidden] [transform:rotateY(180deg)] overflow-hidden"title={data.title}>
+                    <p className='uppercase font-extralight' >{data.name} </p>
                   </div>
                 </div>
               </motion.div>

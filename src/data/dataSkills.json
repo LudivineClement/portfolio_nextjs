@@ -1,61 +1,71 @@
 [
   {
     "id": "1",
+    "name":"Sass",
     "title": "Sass",
     "img": "/img/icons/icons_skills/sass.svg" 
   },
-  
+
   {
     "id": "2",
+    "name":"ES-JS",
+    "title": "Javascript",
+    "img": "/img/icons/icons_skills/javascript.png" 
+  },
+
+  {
+    "id": "3",
+    "name":"React",
     "title": "React",
     "img": "/img/icons/icons_skills/react.webp"
   }, 
 
   {
-    "id": "3",
+    "id": "4",
+    "name":"Node js",
     "title": "Node js",
     "img": "/img/icons/icons_skills/nodejs.webp" 
   },
   
   {
-    "id": "4",
+    "id": "5",
+    "name":"Redux",
     "title": "Redux",
     "img": "/img/icons/icons_skills/redux.png" 
   },
-  
-  {
-    "id": "5",
-    "title": "Github",
-    "img": "/img/icons/icons_skills/github.webp" 
-  },
-  
+    
   {
     "id": "6",
+    "name":"Figma",
     "title": "Figma",
     "img": "/img/icons/icons_skills/figma.svg" 
   },
   
   {
     "id": "7",
+    "name":"Tailwind",
     "title": "Tailwind",
     "img": "/img/icons/icons_skills/tailwind.png" 
   },
   
   {
     "id": "8",
+    "name":"Next JS",
     "title": "Next JS",
     "img": "/img/icons/icons_skills/next-js.png" 
   },
   
   {
     "id": "9",
-    "title": "Vs code",
+    "name":"Vs code",
+    "title": "Visual Studio Code",
     "img": "/img/icons/icons_skills/vscode.webp" 
   },
   
   {
     "id": "10",
-    "title": "RWD",
+    "name":"RWD",
+    "title": "Responsive Web Design",
     "img": "/img/icons/icons_skills/responsive.webp" 
   }  
 ]
