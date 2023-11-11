@@ -11,15 +11,16 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Contact = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false); //Indique si le formulaire est en cours de soumission.
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     subject: '',
     tel: '',
     message: '',
-  });
+  }); // stocke les données du formulaire 
 
+  // Gère le changement de valeur des champs du formulaire
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -28,6 +29,7 @@ const Contact = () => {
     });
   };
 
+  // Soumet le formulaire
   const handleSubmit = async (e) => {
     e.preventDefault();
 

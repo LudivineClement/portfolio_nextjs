@@ -21,12 +21,15 @@ const ProjectCard = ({ img, title, github, url, onClick, id }) => {
       },
     })
   }
+
+  // Gère le clic sur les cards (pour les écrans larges)
   const handleClick = () => {
     if (window.innerWidth > 1024) {
       onClick();
     }
   };
 
+   // Gère le clic sur les cards (pour les écrans + petits)
   const handleClickMobile = () => {
     if (window.innerWidth < 1024) {
       onClick();

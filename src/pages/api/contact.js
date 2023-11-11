@@ -1,9 +1,11 @@
 import nodemailer from "nodemailer"
 
 export default async function contactAPI(req, res) {
+  // Extraction des données de la requête HTTP POST
   const { name, email, tel, subject, message } = req.body
   const user = process.env.EMAIL_USER;
 
+// Configuration du transporteur Nodemailer pour l'envoi d'emails
   const transporter = nodemailer.createTransport({
     host: process.env.EMAIL_HOST,
     port: 587,

@@ -24,11 +24,14 @@ const Project = () => {
 
   const handleProjectSelect = (data) => {
     setSelectedProject(data);
+
+    // S'assure que le composant ProjectModal s'ouvre après la sélection du projet
     setTimeout(() => {
       setIsModalOpen(true);
     }, 0);
   };
 
+  // Gère l'affichage de plus de projets
   const handleShowMoreProjects = () => {
     setProjectsToShow(projectsToShow + 3);
   };
@@ -53,10 +56,11 @@ const Project = () => {
           />
         ))}
       </div>
+
       {projectsToShow < allProjects.length && (
         <motion.button
           initial={{ opacity: 0, scale: 0 }}
-          whileInView={{ opacity: 1, scale: 1 , x: isModalOpen ? -200 : 0,}}
+          whileInView={{ opacity: 1, scale: 1, x: isModalOpen ? -200 : 0, }}
           transition={{ duration: 0.4 }}
           className="text-gray-dark text-sm uppercase font-medium block m-auto mt-16 py-2 px-3 md:px-4 group bg-pink-light tracking-wider rounded border-2 border-solid border-transparent transition-all duration-300 ease-in hover:text-pink-light hover:bg-gray-dark hover:border-2 hover:border-solid hover:border-pink-light "
           onClick={handleShowMoreProjects}
