@@ -20,7 +20,7 @@ const Navbar = () => {
   // État pour suivre l'état du menu sur mobile (ouvert ou fermé)
   const [open, setOpen] = useState(false)
 
-  // Gère le défilement de la page
+  // Gère le scroll de la page
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 70) {
@@ -112,7 +112,7 @@ const Navbar = () => {
   return (
     <nav className={`fixed w-screen top-0 left-0 z-[100] transition-all duration-700 ease-out ${isScrolled || open ? 'bg-off-white shadow-2xl ' : 'bg-transparent shadow-none'}`}>
       <div className=" lg:flex lg:justify-between lg:items-center lg:py-6 lg:px-9 lg:mx-20  ">
-        <a href="#home" className={`font-kaushan text-[2rem] inline-block font-semibold my-4 ml-4 lg:my-0 lg:ml-0 hover:scale-105 transition-transform duration-200 will-change-transform ${isScrolled || open ? 'text-gray-dark' : 'text-off-white'}`}>Portfolio</a>
+        <a href="#home" className={`font-kaushan text-[2rem] inline-block font-semibold my-4 ml-4 lg:my-0 lg:ml-0 ${isScrolled || open ? 'text-gray-dark' : 'text-off-white'}`}>Portfolio</a>
 
         {/* Icône du menu pour les appareils mobiles */}
         <div
@@ -132,6 +132,7 @@ const Navbar = () => {
 
         {/* Liste des liens du menu */}
         <ul className={`absolute lg:static -z-10 lg:z-auto text-gray-dark lg:text-gray-light bg-off-white lg:bg-transparent right-0 w-full lg:w-auto uppercase text-[0.938rem] lg:text-[0.8rem] tracking-widest font-medium leading-[0.938rem] pt-8 transition-all duration-500 ease-in lg:transition-none lg:pt-0 lg:flex lg:items-center lg:gap-10 opacity-0 ${isScrolled ? 'lg:opacity-100 lg:bg-transparent' : 'lg:opacity-0'} ${open ? 'translate-x-0 opacity-100 text-center shadow-2xl' : 'translate-x-full text-center lg:translate-x-0 '}`}>
+
           {menuItems.map((menuItem) => (
             <li
               key={menuItem.section}

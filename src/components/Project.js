@@ -21,6 +21,7 @@ const Project = () => {
       document.body.classList.remove('scrollHidden');
     };
   }, [isModalOpen]);
+  
 
   const handleProjectSelect = (data) => {
     setSelectedProject(data);

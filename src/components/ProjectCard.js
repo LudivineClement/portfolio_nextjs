@@ -55,16 +55,19 @@ const ProjectCard = ({ img, title, github, url, onClick, id }) => {
         <h3 className=' text-3xl lg:text-[1.7rem] opacity-100 text-black font-kaushan font-semibold'>{title}</h3>
 
         <div className='flex justify-center m-3 items-center'>
-          <div title='Voir plus' onClick={onClick}><FontAwesomeIcon icon={faCirclePlus} className='text-black text-4xl lg:text-base mx-2 lg:mx-[5px] mt-[15px] lg:mt-0 transition-transform duration-200 opacity-100 ease-in hover:scale-125 cursor-pointer' /></div>
+
+          <div title='Voir plus' onClick={onClick}><FontAwesomeIcon icon={faCirclePlus} className='text-black text-4xl lg:text-base mx-2 lg:mx-[5px] mt-[15px] lg:mt-0 transition-transform duration-200 opacity-100 ease-in hover:scale-125 cursor-pointer' />
+          </div>
 
           {github && (
             <a href={github} title='Lien Github' target="_blank" className='text-black text-lg lg:text-base mx-2 lg:mx-[5px] mb-1 lg:mb-[2px] transition-transform duration-200 opacity-100 ease-in hover:scale-125 hidden lg:block'>
               <BsGithub />
             </a>
           )}
-          {url ? (
+
+          {url && (
             <a href={url} title='Lien du site' target="_blank" className='hidden lg:block'><FontAwesomeIcon icon={faLink} className='text-black text-lg lg:text-base mx-2 lg:mx-[5px] opacity-100 transition-transform duration-200 ease-in hover:scale-125 ' /></a>
-          ) : null}
+          )}
         </div>
       </div>
     </motion.div>
