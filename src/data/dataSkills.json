@@ -1,71 +1,71 @@
 [
   {
     "id": "1",
-    "name":"Sass",
+    "name": "Sass",
     "title": "Sass",
-    "img": "/img/icons/icons_skills/sass.svg" 
+    "img": "/img/icons/icons_skills/sass.svg"
   },
 
   {
     "id": "2",
-    "name":"ES-JS",
+    "name": "ES-JS",
     "title": "Javascript",
-    "img": "/img/icons/icons_skills/javascript.png" 
+    "img": "/img/icons/icons_skills/javascript.png"
   },
 
   {
     "id": "3",
-    "name":"React",
+    "name": "React",
     "title": "React",
     "img": "/img/icons/icons_skills/react.webp"
-  }, 
+  },
 
   {
     "id": "4",
-    "name":"Node js",
+    "name": "Node js",
     "title": "Node js",
-    "img": "/img/icons/icons_skills/nodejs.webp" 
+    "img": "/img/icons/icons_skills/nodejs.webp"
   },
-  
+
   {
     "id": "5",
-    "name":"Redux",
+    "name": "Redux",
     "title": "Redux",
-    "img": "/img/icons/icons_skills/redux.png" 
+    "img": "/img/icons/icons_skills/redux.png"
   },
-    
+
   {
     "id": "6",
-    "name":"Figma",
+    "name": "Figma",
     "title": "Figma",
-    "img": "/img/icons/icons_skills/figma.svg" 
+    "img": "/img/icons/icons_skills/figma.svg"
   },
-  
+
   {
     "id": "7",
-    "name":"Tailwind",
+    "name": "Tailwind",
     "title": "Tailwind",
-    "img": "/img/icons/icons_skills/tailwind.png" 
+    "img": "/img/icons/icons_skills/tailwind.png"
   },
-  
+
   {
     "id": "8",
-    "name":"Next JS",
+    "name": "Next JS",
     "title": "Next JS",
-    "img": "/img/icons/icons_skills/next-js.png" 
+    "img": "/img/icons/icons_skills/next-js.png"
   },
-  
+
   {
     "id": "9",
-    "name":"Vs code",
+    "name": "Vs code",
     "title": "Visual Studio Code",
-    "img": "/img/icons/icons_skills/vscode.webp" 
+    "img": "/img/icons/icons_skills/vscode.webp"
   },
-  
+
   {
     "id": "10",
-    "name":"RWD",
+    "name": "RWD",
     "title": "Responsive Web Design",
-    "img": "/img/icons/icons_skills/responsive.webp" 
-  }  
+    "img": "/img/icons/icons_skills/responsive.webp"
+  }
 ]

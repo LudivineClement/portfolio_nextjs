@@ -2,11 +2,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlus, faLink } from "@fortawesome/free-solid-svg-icons";
-import { BsGithub } from 'react-icons/bs';
+import { BsGithub } from "react-icons/bs";
 import { motion } from "framer-motion";
 
 const ProjectCard = ({ img, title, github, url, onClick, id }) => {
-
   const animationProject = {
     initial: {
       opacity: 0,
@@ -19,8 +18,8 @@ const ProjectCard = ({ img, title, github, url, onClick, id }) => {
         duration: 0.5,
         delay: 0.2 * id,
       },
-    })
-  }
+    }),
+  };
 
   // Gère le clic sur les cards (pour les écrans larges)
   const handleClick = () => {
@@ -29,7 +28,7 @@ const ProjectCard = ({ img, title, github, url, onClick, id }) => {
     }
   };
 
-   // Gère le clic sur les cards (pour les écrans + petits)
+  // Gère le clic sur les cards (pour les écrans + petits)
   const handleClickMobile = () => {
     if (window.innerWidth < 1024) {
       onClick();
@@ -42,36 +41,58 @@ const ProjectCard = ({ img, title, github, url, onClick, id }) => {
       whileInView="animate"
       custom={id}
       viewport={{ once: true }}
-      className="bg-white group relative overflow-hidden h-[400px] cursor-pointer shadow-sm will-change-transform"
+      className="group relative h-[400px] cursor-pointer overflow-hidden bg-white shadow-sm will-change-transform"
     >
       <img
         src={img}
         alt=""
         onClick={handleClick}
-        className='w-full h-full object-cover lg:grayscale transition-transform duration-[400ms] ease-out group-hover:lg:scale-105 group-hover:lg:grayscale-0'
+        className="h-full w-full object-cover transition-transform duration-[400ms] ease-out lg:grayscale group-hover:lg:scale-105 group-hover:lg:grayscale-0"
       />
-      <div onClick={handleClickMobile} className='absolute w-full flex flex-col items-center justify-center lg:justify-normal overflow-hidden bg-pink-global h-0 z-10 lg:cursor-default  -bottom-5 p-4 group-hover:lg:h-[100px] group-hover:h-full group-hover:opacity-80 group-hover:bottom-0 transition-bottom duration-500 ease-in-out opacity-90'>
+      <div
+        onClick={handleClickMobile}
+        className="transition-all absolute -bottom-5 z-10 flex h-0 w-full flex-col items-center justify-center overflow-hidden bg-pink-global  p-4 opacity-90 duration-500 ease-in-out group-hover:bottom-0 group-hover:h-full group-hover:opacity-80 lg:cursor-default lg:justify-normal group-hover:lg:h-[100px]"
+      >
+        <h3 className=" font-kaushan text-3xl font-semibold text-black opacity-100 lg:text-[1.7rem]">
+          {title}
+        </h3>
 
-        <h3 className=' text-3xl lg:text-[1.7rem] opacity-100 text-black font-kaushan font-semibold'>{title}</h3>
-
-        <div className='flex justify-center m-3 items-center'>
-
-          <div title='Voir plus' onClick={onClick}><FontAwesomeIcon icon={faCirclePlus} className='text-black text-4xl lg:text-base mx-2 lg:mx-[5px] mt-[15px] lg:mt-0 transition-transform duration-200 opacity-100 ease-in hover:scale-125 cursor-pointer' />
+        <div className="m-3 flex items-center justify-center">
+          <div title="Voir plus" onClick={onClick}>
+            <FontAwesomeIcon
+              icon={faCirclePlus}
+              className="mx-2 mt-[15px] cursor-pointer text-4xl text-black opacity-100 transition-transform duration-200 ease-in hover:scale-125 lg:mx-[5px] lg:mt-0 lg:text-base"
+            />
           </div>
 
           {github && (
-            <a href={github} title='Lien Github' target="_blank" className='text-black text-lg lg:text-base mx-2 lg:mx-[5px] mb-1 lg:mb-[2px] transition-transform duration-200 opacity-100 ease-in hover:scale-125 hidden lg:block'>
+            <a
+              href={github}
+              title="Lien Github"
+              target="_blank"
+              className="mx-2 mb-1 hidden text-lg text-black opacity-100 transition-transform duration-200 ease-in hover:scale-125 lg:mx-[5px] lg:mb-[2px] lg:block lg:text-base"
+            >
               <BsGithub />
             </a>
           )}
 
           {url && (
-            <a href={url} title='Lien du site' target="_blank" className='hidden lg:block'><FontAwesomeIcon icon={faLink} className='text-black text-lg lg:text-base mx-2 lg:mx-[5px] opacity-100 transition-transform duration-200 ease-in hover:scale-125 ' /></a>
+            <a
+              href={url}
+              title="Lien du site"
+              target="_blank"
+              className="hidden lg:block"
+            >
+              <FontAwesomeIcon
+                icon={faLink}
+                className="mx-2 text-lg text-black opacity-100 transition-transform duration-200 ease-in hover:scale-125 lg:mx-[5px] lg:text-base "
+              />
+            </a>
           )}
         </div>
       </div>
     </motion.div>
-  )
+  );
 };
 
 export default ProjectCard;

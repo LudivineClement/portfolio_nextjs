@@ -1,9 +1,9 @@
-import React from 'react';
-import { TypeAnimation } from 'react-type-animation';
+import React from "react";
+import { TypeAnimation } from "react-type-animation";
 
 const TypeWriter = () => {
   return (
-    <span className='block text-[42px] md:text-5xl lg:text-6xl font-medium h-20 lg:h-[5.7rem]'>
+    <span className="block h-20 text-[42px] font-medium md:text-5xl lg:h-[5.7rem] lg:text-6xl">
       <TypeAnimation
         sequence={[
           "Développeuse",
@@ -17,7 +17,7 @@ const TypeWriter = () => {
         ]}
         speed={30}
         repeat={Infinity}
-        cursor={false}       
+        cursor={false}
       />
     </span>
   );
